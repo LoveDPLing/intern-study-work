@@ -1,0 +1,340 @@
+.header{   
+
+    width:960px;
+
+    height:80px; 
+
+    background-color:rgb(253, 245, 245);
+
+    margin:0 auto; 
+
+    padding-top: 28px; 
+    
+    box-sizing:border-box;
+
+}
+.content{
+
+    width:960px;
+
+    height:660px;
+
+    margin:0 auto;
+
+    border: 1px solid black;
+  
+}    
+ .footer{
+
+    width:960px;
+
+    height:48px;
+
+    text-align: center;
+
+    line-height:30px;
+
+    margin:0 auto;
+
+    border: 1px solid black;
+
+
+
+}   
+
+*{
+    font-family: 微软雅黑；
+
+}
+
+body{
+
+   font-size:12px; 
+
+}
+
+/* 头部包含的css */
+.logo{
+
+    height : 70px;
+
+    margin:-41px 0px 0px -40px;
+
+}
+li{
+
+    margin-top:1px;
+
+    float:left;
+
+    list-style: none;
+
+}
+.links{
+    
+    margin-top:-40px;
+
+    float:right;
+}
+.top-left{
+
+    font-size:8px;
+
+    width: 960px;
+
+    height:38px;
+
+    line-height:38px;
+
+    background-color:rgb(120, 147, 201);
+
+    margin-top:-11px;
+
+
+}
+/* 主体下的所有div */
+.main{
+
+   height: 622px;
+
+}
+/* 主体下的左半部分 */
+.left{
+
+    height:100%;
+
+    width:70%;
+
+    border-right: 1px solid black;
+
+    float : left;
+
+}
+
+.registered{
+
+    margin:40px 0px 0px 60px;
+
+}
+.registered a{
+
+    float:left;
+
+    list-style:none;
+
+    width:150px;
+
+    height:30px;
+
+    border: 0.5px solid black;
+
+
+    /* margin:40px 0px 0px 20px; */
+
+    /* text-align:center;
+
+    line-height:30px; */
+
+}
+.registered  a  li {
+
+    margin-left:40px;
+
+    line-height:30px;
+
+}
+ .address{
+
+    font-size:15px;
+
+    margin:30px 0px 0px 95px;
+    
+} 
+.biao1{
+
+    width: 200px;
+
+    height : 25px;
+
+    border-radius : 5%;
+
+}
+#sel{
+
+    width: 120px;
+
+    height : 30px;
+
+    border-radius : 5%;
+}
+.email-error{
+
+   width:300px;
+
+   height:50px;
+   
+   border:1px solid red;
+
+   margin-left:185px;
+
+   color:red;
+
+   display:none;
+
+   text-align:center;
+
+   line-height:50px;
+
+   background-color:#fff;
+
+}
+.p1{
+
+    margin:5px 0px 0px 190px;
+
+}
+.password{
+
+    font-size:15px;
+
+    margin:10px 0px 0px 125px;
+
+}
+.biao2{
+
+    width: 350px;
+
+    height : 25px;
+
+    border-radius : 5%;
+
+}
+.confirm-password{
+
+    font-size:15px;
+
+    margin:10px 0px 0px 100px;
+
+}
+.telephone{
+
+    font-size:15px;
+
+    margin:10px 0px 0px 100px;
+
+}
+.code{
+
+    font-size:15px;
+
+    margin:10px 0px 0px 114px;
+
+}
+.messager{
+
+    font-size:15px;
+
+    margin:10px 0px 0px 85px;
+
+}
+.p2{
+
+    margin:15px 0px 0px 190px;
+
+}
+.last{
+
+    width : 90px;
+
+    height : 40px;
+
+    background-color:rgb(124, 228, 124);
+
+    margin : 5px 0px 0px 185px;
+
+    text-align : center;
+
+    line-height : 40px;
+
+    font-size : 15px;
+
+    font-family: 宋体；
+}
+/* .registered > a:link{
+
+    background-color:white;
+
+} */
+
+/* .registered > a:visited{
+
+   background-color:blue;
+} */
+/* .registered :first-child{
+
+    background-color:blue;
+
+} */
+.registered  a:hover{
+
+    background-color:blue;
+
+}
+/* 主体下的右半部分 */
+.right{
+
+    width:30%;
+
+    /* background : yellow; */
+
+    float : right;
+/* 
+    background-image: url(images/邮箱大师.gif); */
+
+}
+.photo  img{
+
+    width :285px;
+
+    height : 300px;
+
+}
+.photo{
+
+margin-top:-450px;
+
+margin-left:2px;
+
+}
+/* 主体下的尾部 */
+.footer-center{
+
+    margin-top:10px;
+
+    margin-left :150px;
+
+}
+
+.footer a{
+    background-color:#ccc;
+}
+#changeImg{
+
+   margin:0 auto;
+
+}
+.code-refresh{
+
+   margin-left:320px;
+
+}
+.phone-code{
+
+    width:200px;
+
+    height:30px;
+
+    border:1px solid black;
+
+    margin: 10px 0px 0px 185px;
+}
