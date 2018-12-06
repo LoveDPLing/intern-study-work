@@ -11,15 +11,15 @@ $('#password-001').on('input propertychange',function(){
   
   });
 
-  var hoster1 = Window.localStorage.getItem("hoster");
+  var hoster1 = window.localStorage.getItem("hoster");
 
-  var passsword02 = Window.localStorage.getItem("password01");
+  var password02 = window.localStorage.getItem("password01");
 
 $('#loading').click(function(){
 
-   if(aa == hoster1&& bb==password02){
+   if(aa == hoster1 && bb == password02){
 
-    alert("登陆成功！");
+    $(location).prop('href', 'chengguo.html');
 
    }else{
 
@@ -29,6 +29,3 @@ $('#loading').click(function(){
 
      });
     
-     window.localStorage.setItem("hoster1","c");
-
-     window.localStorage.setItem("password02","d");

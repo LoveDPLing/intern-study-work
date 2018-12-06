@@ -208,8 +208,8 @@
 
       var hoster,password01;
 
-      window.localStorage.setItem("hoster","c");
-      window.localStorage.setItem("password01","d");
+      window.localStorage.setItem("hoster",c);
+      window.localStorage.setItem("password01",d);
 
        });
        
