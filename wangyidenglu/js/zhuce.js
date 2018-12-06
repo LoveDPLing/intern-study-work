@@ -201,3 +201,18 @@
       
            }
        });
+       $('.last').click(function(){
+
+   
+      alert("注册成功！");
+
+      var hoster,password01;
+
+      window.localStorage.setItem("hoster","c");
+      window.localStorage.setItem("password01","d");
+
+       });
+       
+
+
+       

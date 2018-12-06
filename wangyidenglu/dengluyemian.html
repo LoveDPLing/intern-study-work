@@ -6,15 +6,75 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>网易登陆页面</title>
     <link rel="stylesheet" type="text/css" href="css/denglu.css">
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
 </head>
 <body>
     <div class="header">
-        <a href = "javascript:void(0)" title = "">
-            <img src="images/163.png" alt="163.com"><span></span><div>中国第一大品牌</div>
-        </a>
-        <div></div>
+        <div class="header-left">
+            <a href="javascript:void(0)" title="" class="header-01">
+                <img src="images/163（1）.png" alt="163.com">
+            </a>
+            <div class="header-left-01"></div>
+            <div class="header-left-02">中国第一大品牌</div>
+        </div>
+        <div class="header-right">
+            <a href="javascript:void(0)" title="*">企业邮箱</a>
+            <a href="javascript:void(0)" title="*">VIP邮箱</a>
+            <a href="javascript:void(0)" title="*">国外用户登陆</a>
+            <a href="javascript:void(0)" title="*">手机版</a>
+            <a href="javascript:void(0)" title="*">电脑板</a>
+            <a href="javascript:void(0)" title="*">帮助</a>
+            <a href="javascript:void(0)" title="*">私人问题</a>
+            <a href="javascript:void(0)" title="*">常见问题</a>
+            <a href="javascript:void(0)" title="*">登陆问题</a>
+        </div>
     </div>
-    <div class="main">aaa</div>
-    <div class="footer"></div>
+    <div class="main" style="background-color:rgb(236, 237, 239)">
+        <div class="main-inner" style="background:url(images/denglu1.png) no-repeat">
+        </div>
+        <div class="main-box">
+            <div class="box-top">
+                <a href="javascript:void(0)" title="*" class="box-top-01">二维码登陆</a>
+                <a href="javascript:void(0)" title="*" class="box-top-02">邮箱账号登陆</a>
+            </div>
+            <div class="box-middle">
+                <p class="address"><input type="text" class="biao1" name="biao1" placeholder="请输入邮箱" id="email-001">&nbsp
+                    @&nbsp<select id="sel">
+                        <option value="1" selected="selected">163.com</option>
+                        <option value="2">126.com</option>
+                        <option value="3">yeah.net</option>
+                    </select> </p>
+                <p class="password"><input type="text" class="biao2" placeholder="请输入密码" id="password-001"></p>
+                <input class="p2" type="radio" value="0" id="s1" /><label for="s1">
+                    十天内免登录
+                </label>
+                <a href="javascript:void(0)" title="*" class="forget"> 忘记密码？</a>
+                <div class="load-01" id="loading">登陆</div>
+                <div class="insert-01"><a target="_blank" href="zhuceyemian.html" title="注册页面">注册</a></div>
+            </div>
+            <img src="images/微笑.png" class="smile">
+            <div class="box-bottom"></div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="footer-left"><a><img src="images/QQ图片网易.png" alt="*"></a></div>
+        <div class="footer-right-top"><a href="javascript:void(0)" title="*">企业邮箱</a>
+            <a href="javascript:void(0)" title="*" class="footer-right-top-01">网易首页</a>
+            <a href="javascript:void(0)" title="*">国外用户登陆</a>
+            <a href="javascript:void(0)" title="*">邮箱黄页</a>
+            <a href="javascript:void(0)" title="*">网易制造</a>
+            <a href="javascript:void(0)" title="*">网易.有钱</a>
+            <a href="javascript:void(0)" title="*">网易严选</a>
+            <a href="javascript:void(0)" title="*">网易一起拼</a>
+            <a href="javascript:void(0)" title="*">政府公益热线</a> </div>
+        <div class="footer-right-bottom">
+            <a href="javascript:void(0)" title="*" class="footer-right-bottom-01">网易公司版权所有©1997-2018</a>
+            <a href="javascript:void(0)" title="*">ICP证粤B2-20090191</a>
+            <a href="javascript:void(0)" title="*">粤公网安备 44010602000311</a>
+            <span style=" color:#ccc">（数据来源：艾媒邮箱报告）</span>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/denglu.js"></script>
 </body>
 </html>

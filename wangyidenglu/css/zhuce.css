@@ -4,7 +4,7 @@
 
     height:80px; 
 
-    background-color:rgb(253, 245, 245);
+    background-color:rgb(248, 247, 247);
 
     margin:0 auto; 
 
@@ -154,7 +154,7 @@ li{
 
     width: 200px;
 
-    height : 25px;
+    height : 30px;
 
     border-radius : 5%;
 
@@ -227,7 +227,7 @@ li{
 
     font-size:15px;
 
-    margin:10px 0px 0px 114px;
+    margin:10px 0px 0px 112px;
 
 }
 .messager{
@@ -242,6 +242,11 @@ li{
     margin:15px 0px 0px 190px;
 
 }
+.p-1{
+
+    margin:-16px 0px 0px 190px;
+}
+
 .last{
 
     width : 90px;
@@ -292,7 +297,7 @@ li{
     background-image: url(images/邮箱大师.gif); */
 
 }
-.photo  img{
+.photo img{
 
     width :285px;
 
@@ -336,5 +341,5 @@ margin-left:2px;
 
     border:1px solid black;
 
-    margin: 10px 0px 0px 185px;
+    margin: 27px 0px 0px 185px;
 }
