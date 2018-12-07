@@ -1,0 +1,37 @@
+body {
+    font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+    color: #333;
+    background-color: #F9F9F9;
+    min-width: 1226px;
+}
+
+div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,input,form,a,p,textarea{
+    margin: 0;
+    padding: 0;
+   
+    }
+    ol,ul,li{
+      list-style: none;
+    }
+    a{   line-height: 24px;
+         font-size: 12px;
+        text-decoration: none;
+    }
+  span{
+    font-size: 12px;
+  }
+    img{
+        border:none;
+        display: block;
+    }
+    .clearfloat {
+        zoom: 1;
+    }
+    .clearfloat::after{
+    
+        display: block;
+        clear: both;
+        content: "";
+        visibility: hidden;
+        height:0;
+    }

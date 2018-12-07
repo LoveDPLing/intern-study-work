@@ -1,0 +1,275 @@
+body {
+    line-height: 160%;
+    font-size: 12px;
+    color: #555;
+    text-align: center;
+    background-color: #F9F9F9;
+}
+.header {
+    width: 960px;
+    height: 81px;
+    margin: 0 auto;
+    background: #F9F9F9;
+    text-align: left;
+    position: relative;
+}
+.header .bg{
+        width: 644px;
+        height: 27px;
+        position: absolute;
+        left: 0;
+        top: 30px;
+}
+.header .bg a {
+    display: block;
+    width: 128px;
+    height: 27px;
+    white-space: nowrap;
+    text-indent: 3000px;
+    overflow: hidden;
+    float: left;
+}
+.bg .bg-first{
+    background: url(../img/QQ截图20181206114438.png);
+    background-size: 100% 100%;
+}
+.bg .bg-second{
+    background: url(../img/QQ截图20181206114710.png);
+    background-size: 100% 100%;
+}
+.bg .bg-third{
+    background: url(../img/QQ截图20181206114803.png);
+    background-size: 100% 100%;
+}
+.bg span{
+    font-size:17px;
+    color:#555;
+    letter-spacing:1px; 
+}
+.links{
+    width: 200px;
+    position: absolute;
+    right: 0;
+    top: 34px;
+    text-align: right;
+    color: #999;
+}
+.content {
+    width: 960px;
+    height: 747px;
+    margin: 0 auto;
+    text-align: left;
+    border:1px solid #AFAFAF;
+}
+.content-header{
+    height: 36px;
+    background-position: 0 0;
+    background-color: LightSeaGreen;
+    border: #5B88B8 1px solid;
+    border-radius: 3px 3px 0 0;
+}
+.content-header h1 {
+    font-size: 14px;
+    line-height: 36px;
+    font-weight: normal;
+    color: #FFF;
+    text-indent: 20px;
+}
+.content-main{
+   
+    border-top-width: 0;
+    position: relative;
+}
+.content .main-left {
+    width: 582px;
+    float: left;
+    padding: 50px 0 36px 60px;
+    zoom: 1;
+}
+.tools{
+    width:137px;
+    height:58px;
+    padding-left:55px;
+}
+.tools ul {
+    width: 412px;
+    height: 35px;
+}
+.tools li{
+  
+    height:35px;
+    float:left;
+    background: LightSeaGreen;
+}
+.tools .a1{
+    font-weight: bold;
+    color: #FFF;
+}
+.tools a {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+}
+.regForm{
+  margin-left: 9px;   
+}
+.regForm .name{
+    position: relative;
+    z-index: 11;
+    margin-right: 60px;
+}
+.regForm-item-tit {
+    width: 90px;
+    position: absolute;
+    left: 0;
+    top: 13px;
+    text-align: right;
+    font-size: 14px;
+}
+.regForm-item-tit .txt-impt {
+    margin-right: 4px;
+}
+ .txt-impt {
+    margin-right: 4px;
+    color: #C00;
+}
+.regForm-item-ct {
+    padding: 8px 0 8px 85px;
+    zoom: 1;
+    position: relative;
+    padding-left: 110px;
+}
+.ipt {
+    padding: 4px 5px;
+    border: #ABABAB 1px solid;
+    box-shadow: 2px 2px 3px #EDEDED inset;
+    font-size: 14px;
+    border-radius: 3px;}
+.regForm-item-ct .ipt {
+    width: 200px;
+    padding: 4px 5px;
+    border: #ABABAB 1px solid;
+    box-shadow: 2px 2px 3px #EDEDED inset;
+    font-size: 14px;
+    border-radius: 3px;
+}
+select {
+    padding: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    box-sizing: border-box;
+    align-items: center;
+    white-space: pre;
+    background-color: white;
+    cursor: default;
+    border-width: 1px;
+    border-style: solid;
+    border-image: initial;
+    display: inline-block;
+}
+.regForm-item-tit1{
+    position: absolute;
+    left: 122px;
+    top: 188px;
+    text-align: right;
+    font-size: 14px;
+}
+.regForm-item-tit2{
+    position: absolute;
+    left: 98px;
+    top: 260px;
+    text-align: right;
+    font-size: 14px;
+}
+.regForm-item-tit3{
+    width: 90px;
+    position: relative;
+    left: 0;
+    top: 13px;
+    text-align: right;
+    font-size: 14px;
+}
+option {
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+.regForm-item-ct .tips {
+    line-height: 16px;
+    padding: 6px 0 4px;
+}
+.ipt-err{
+    padding-left: 35px;
+    width:200px;
+}
+.regForm-item-ct3 {
+    padding: 8px 0 8px 85px;
+    zoom: 1;
+    position: relative;
+    padding-left: 110px;
+}
+.regForm-item-ct3 .vCode {
+    border: #E7E7E7 1px solid;
+    position: absolute;
+    left: 332px;
+    top: -13px;
+}
+.vCodeArea-big .switchvCode {
+    left: 335px;
+    top: 45px;
+    position: absolute;
+}
+.regForm-item-ct .tips {
+    line-height: 16px;
+    padding: 6px 0 4px;
+}
+#vRemind{
+    top: 20px;
+    position: absolute;
+}
+.btn{
+    position: absolute;
+    top: 42px;
+}
+.service{
+    top:538px;
+    padding: 8px 0 8px 85px;
+    zoom: 1;
+    position: absolute;
+    padding-left: 110px;
+}
+.btnReg {
+    position: absolute;
+    top: 600px;
+    left: 200px;
+    width: 119px;
+    height: 37px;
+    font-size: 14px;
+    line-height: 37px;
+    color: LightSeaGreen;
+    text-align: center;
+}
+.content .mainBody-side {
+    width: 315px;
+    float: right;
+}
+.mainBody-side .regExt {
+    width: 315px;
+    height: 432px;
+    padding: 106px 0 0 45px;
+    color: #AFAFAF;
+}
+.footer{
+ margin:auto;
+text-align: center;
+clear: both;
+height: 80px;
+line-height: 40px;
+color: #999;
+}
