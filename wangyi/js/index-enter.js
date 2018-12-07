@@ -28,11 +28,11 @@ $(function () {
     });
     // 对按钮的逻辑验证
     $("#loginbox").click(function (e) {
-        email=$("#email").val();
-        password=$("#password").val();
-        email1=localStorage.getItem("name");
-        password1=localStorage.getItem("password");
-        e.preventDefault();
+        var email=$("#email").val();
+        var password=$("#password").val();
+        var email1=localStorage.getItem("name");
+        var password1=localStorage.getItem("password");
+        // e.preventDefault();
         if(!(email==email1)){
             alert("请输入正确邮箱地址")
         }else if(!(password==password1)) {

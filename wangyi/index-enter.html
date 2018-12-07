@@ -8,9 +8,9 @@
     <title>163网易免费邮--中文邮箱第一品牌</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="css/base-enter.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-1.10.2.min.js"></script>
 </head>
-<body>
+<body class="index-endter">
     <header>
         <h1 class="log">
             <a href="#">
@@ -31,57 +31,60 @@
         </div>
     </header>
     <div class="main">
-        <div class="slider">
-            <ul>
-            <li><a href="#"><img src="image/slide1.jpg" alt=""></a></li>
-            <li><a href="#"><img src="image/slide2.jpg" alt=""></a></li>
-            <li><a href="#"><img src="image/slide3.jpg" alt=""></a></li>
-            </ul>
-            <div class="arrow">
-                <span id="arrow-left"> < </span>
-                <span  id="arrow-right"> > </span>
+        <div class="container" style="position: relative;">
+            <div class="slider">
+                <ul>
+                    <li><a href="#"><img src="image/slide1.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="image/slide2.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="image/slide3.jpg" alt=""></a></li>
+                </ul>
+                <div class="arrow">
+                    <span id="arrow-left"> < </span>
+                    <span  id="arrow-right"> > </span>
+                </div>
             </div>
-        </div>
-        <div class="login">
-            <h2 class="login-h2">邮箱账号登陆</h2>
-            <div class="login-form">
-                <form action="">
-                    <div class="input-username">
-                        <div class="u-logo">
-                            <div class="logo-img">
+            <div class="login">
+                <h2 class="login-h2">邮箱账号登陆</h2>
+                <div class="login-form">
+                    <form action="">
+                        <div class="input-username">
+                            <div class="u-logo">
+                                <div class="logo-img">
+                                </div>
                             </div>
+                            <div class="u-input">
+                                <input autocomplete="off" type="email" name="email" class="u-email" placeholder="邮箱账号或手机号码"  id="email">
+                            </div>
+                            <span>@163.com</span>
                         </div>
-                        <div class="u-input">
-                        <input autocomplete="off" type="text" name="email" class="u-email" placeholder="邮箱账号或手机号码"  id="email">
-                        </div>
-                        <span>@163.com</span>
-                    </div>
-                    <div class="input-password">
-                        <div class="u-logo">
-                            <div class="logo-img" style="background-position: -291px -86px">
+                        <div class="input-password">
+                            <div class="u-logo">
+                                <div class="logo-img" style="background-position: -291px -86px">
 
+                                </div>
+                            </div>
+                            <div class="u-input">
+                                <input autocomplete="off" type="password" name="password" class="u-email" placeholder="输入密码" id="password">
                             </div>
                         </div>
-                        <div class="u-input">
-                            <input autocomplete="off" type="password" name="password" class="u-email" placeholder="输入密码" id="password">
-                        </div>
-                    </div>
-                    <div class="unlogin">
+                        <div class="unlogin">
                         <span>
                             <input type="checkbox" name="un-login" style="width: 13px;height: 13px;margin-right: 5px;margin-top: 5px">十天内免登陆
                         </span>
-                        <a href="#" style="float: right">忘记密码？</a>
-                        <a target="_blank" class="enroll" href="http://localhost:63342/intern-study-work/wangyi/index-register.html?_ijt=igh97coah76rdaobnvqms4ids7">注册</a>
-                        <a href="#" class="loginbox" id="loginbox">登陆</a>
-                    </div>
-                </form>
-            </div>
-            <div class="mailapp">
-                <img src="image/APP.png" alt="">
-                <p>春风 网易原创情趣用品品牌</p>
-                <p>网易邮箱提醒您谨防邮件诈骗！</p>
+                            <a href="#" style="float: right">忘记密码？</a>
+                            <a target="_blank" class="enroll" href="index-register.html">注册</a>
+                            <a href="javascript:void(0)" class="loginbox" id="loginbox">登陆</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="mailapp">
+                    <img src="image/APP.png" alt="">
+                    <p>春风 网易原创情趣用品品牌</p>
+                    <p>网易邮箱提醒您谨防邮件诈骗！</p>
+                </div>
             </div>
         </div>
+
     </div>
     <footer style="width: 1000px;margin: 25px auto 0;height: 100px;">
             <div class="footer-log">
