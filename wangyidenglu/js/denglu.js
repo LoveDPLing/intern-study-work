@@ -1,8 +1,7 @@
 var account1,password;
+var i=1;
 $('#email-001').on('input propertychange',function(){
-
   account1 = $('#email-001').val();
-
 });
 $('#password-001').on('input propertychange',function(){
     password  = $('#password-001').val(); 
@@ -13,9 +12,13 @@ $('#password-001').on('input propertychange',function(){
 $('#loading').click(function(){
   // 判断账号密码是否错误
    if(account1 == hoster1 && password == password02){
+    $('#email-001').val("");
     $(location).prop('href', 'chengguo.html');
    }else{
     alert("登陆失败！请检查您的账户和密码");
    }
      });
     
+
+
+     

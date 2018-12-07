@@ -200,6 +200,15 @@ li{
     border-radius : 5%;
 
 }
+.p1-01{
+
+    margin:5px 0px 0px 190px;
+
+    color:red;
+
+    display:none;
+
+}
 .confirm-password{
 
     font-size:15px;
@@ -241,6 +250,14 @@ input::-webkit-input-placeholder{
 .p-1{
 
     margin:-16px 0px 0px 190px;
+}
+.p-1-01{
+
+    margin:-16px 0px 0px 190px;
+
+    color:red;
+
+    display: none;
 }
 
 .last{
