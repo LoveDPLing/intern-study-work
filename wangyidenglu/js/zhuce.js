@@ -1,5 +1,5 @@
 
-  var c,d,e,f,h;
+  var c,d,e,f,h,g,cc,dd,ee,ff,gg,hh;
 
   $('#email1').on('input propertychange',function(){
     　　
@@ -58,8 +58,9 @@
 
         $('#p1-show').show();
 
+        cc=1;
+
     }
- 
    });
 
    $('#password1').on('input propertychange',function(){
@@ -91,6 +92,7 @@
 
         });
 
+        dd = 1;
      }
   
     });
@@ -122,17 +124,19 @@
     
             });
     
+           ee = 1;
+
          }
      });
      $('#phone1').on('input propertychange',function(){
     　　
   
-      f = $('#phone1').val();
-   
-     });
+        f = $('#phone1').val();
+     
+       });
+    
      $('#phone1').blur(function(){
-   
-         
+  
        if(f.length != 11)
        {
         $('#phone-1').text("请填写正确的手机号码！");
@@ -153,24 +157,43 @@
 
         });
 
+         ff = 1;
+
     }
       });
-      $('#code1').on('input propertychange',function(){
+    $('#code1').on('input propertychange',function(){
     　　
+  
+        g = $('#code1').val();
+     
+       });
+    $('#code1').blur(function(){
+
+
+       if(g != window.localStorage.getItem("code01"))
+     {
+        $('#code-1').text("验证码错误");
+
         $('#code-1').css({
 
             color:'red'
 
         });
-       });
-       $('#code1').blur(function(){
+     }
+     else{
+  
+        $('#code-1').text("请填写表格中的字符，不区分大小写！");
 
         $('#code-1').css({
 
             color:'#aaa'
-    
+
+        });
+
+        gg = 1;
+     }
+  
        });
-    });
     $('#messager1').on('input propertychange',function(){
     　　
   
@@ -199,18 +222,29 @@
       
               });
       
+             hh = 1;
+
            }
        });
        $('.last').click(function(){
 
-   
-      alert("注册成功！");
+        if(cc == 1 && dd == 1&&ff ==1&&ee == 1&&hh == 1 && gg ==1){
 
-      var hoster,password01;
+       alert("注册成功！");
 
-      window.localStorage.setItem("hoster",c);
-      window.localStorage.setItem("password01",d);
+       $(location).prop('href', 'dengluyemian.html');
 
+       var hoster,password01;
+
+       window.localStorage.setItem("hoster",c);
+
+       window.localStorage.setItem("password01",d);
+
+        }else{
+  
+            alert("有错误！！！");
+
+        }
        });
        
 

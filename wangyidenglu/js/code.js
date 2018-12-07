@@ -11,10 +11,13 @@ jQuery(function($){
         var b= randomNum(min, max);
         return "rgb(" + r + "," + g + "," + b + ")";
     }
+    var code01;
     var code=drawPic();
     document.getElementById("changeImg").onclick = function(e) {
         e.preventDefault();
         code=drawPic();
+        window.localStorage.setItem("code01",code);
+
     }
     /**绘制验证码图片**/
     function drawPic() {
