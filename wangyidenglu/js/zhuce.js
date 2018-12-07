@@ -164,6 +164,12 @@
       var hoster,password01;
        window.localStorage.setItem("hoster",account);
        window.localStorage.setItem("password01",password001);
+       $('#email1').val("");
+       $('#password1').val("");
+       $('#password2').val("");
+       $('#phone1').val("");
+       $('#code1').val("");
+       $('#messager1').val("");
         }else{  
             alert("有错误！！！");
         }

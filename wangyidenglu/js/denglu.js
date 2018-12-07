@@ -1,5 +1,4 @@
 var account1,password;
-
 $('#email-001').on('input propertychange',function(){
 
   account1 = $('#email-001').val();
