@@ -1,383 +1,409 @@
-body{
+body {
 
-widows: 100%;
+    widows: 100%;
 
-height:770px;
+    height: 770px;
 
-margin:0;
+    margin: 0;
 
-padding:0;
+    padding: 0;
 
 }
+
 /* 网易注册页面的最上面的部分 */
-.header{
+.header {
 
- width:1000px;
+    width: 1000px;
 
- height:64px;
+    height: 64px;
 
- margin:0 auto;
-
-
-}
-.header-left{
-
-width:280px;
-
-height:100%;
-
-float:left;
+    margin: 0 auto;
 
 }
-.header-01{
 
-    width:136px;
+.header-left {
 
-    height:100%;
+    width: 280px;
 
-}
-.header-01 img{
+    height: 100%;
 
-   width:136px;
-
-   height:32px;
-   
-   margin-top:17px;
+    float: left;
 
 }
-.header-left-01{
 
-  
-    width:0.8px;
+.header-01 {
 
-    height:25px;
+    width: 136px;
 
-    background-color:#aaa;
-
-    margin:-32px 0px 0px 150px;
-
+    height: 100%;
 
 }
-.header-left-02{
 
-    width:157px;
+.header-01 img {
 
-    height:28px;
+    width: 136px;
 
-    font-size:15px;
+    height: 32px;
 
-    text-align:center;
+    margin-top: 17px;
 
-    line-height:28px;
+}
+
+.header-left-01 {
+
+    width: 0.8px;
+
+    height: 25px;
+
+    background-color: #aaa;
+
+    margin: -32px 0px 0px 150px;
+
+}
+
+.header-left-02 {
+
+    width: 157px;
+
+    height: 28px;
+
+    font-size: 15px;
+
+    text-align: center;
+
+    line-height: 28px;
 
     margin: -28px 0px 0px 145px;
 
-    color:#aaa;
+    color: #aaa;
 }
-.header-right{
 
-  float:right;
+.header-right {
 
-  width:550px;
+    float: right;
 
-  height:30px;
+    width: 550px;
 
-  margin-top:18px;
+    height: 30px;
 
-}
-.header-right a{
-
-
- font-size:13px;
-
- color:#aaa;
-
- height:30px;
-
- margin-left: 8px;
-
- text-decoration: none;
+    margin-top: 18px;
 
 }
-/* 网易注册页面的中间部分 */
-.main{
 
-    width:100%;
+.header-right a {
 
-    height:600px;
+    font-size: 13px;
 
-}
-.main-inner{
+    color: #aaa;
 
-width:100%;
+    height: 30px;
 
-height:600px;
-
-}
-.main-box{
-
-   width:400px;
-
-   height:500px;
-  
-   /* border:1px solid black; */
-
-   margin:-567px 0px 0px 750px;
-
-   background-color:#fff;
-
-   position: absolute;
-
-   box-shadow: 10px 20px 10px #aaa;
-
-}
-.box-top{
-
-line-height:50px;
-
-font-size:17px;
-
-}
-.box-top a{
+    margin-left: 8px;
 
     text-decoration: none;
 
-    color:black;
-
-    padding-bottom:10px;
-
 }
-.box-top-01{
 
-  margin-left:50px
+/* 网易注册页面的中间部分 */
+.main {
 
-}
-.box-top-02{
+    width: 100%;
 
-  margin-left:100px;
+    height: 600px;
 
 }
 
-.box-top a:hover{
+.main-inner {
 
-    color:blue;
-    
-    border-bottom:1px solid blue;
-    
+    width: 100%;
+
+    height: 600px;
+
 }
-.box-middle{
 
-  height:300px;
+.main-box {
+
+    width: 400px;
+
+    height: 500px;
+
+    /* border:1px solid black; */
+
+    margin: -567px 0px 0px 750px;
+
+    background-color: #fff;
+
+    position: absolute;
+
+    box-shadow: 10px 20px 10px #aaa;
+
 }
-.address{
 
-    font-size:16px;
+.box-top {
 
-    margin-top:30px;
+    line-height: 50px;
 
-    color:rgb(146, 144, 144);
-} 
-.biao1{
+    font-size: 17px;
+
+}
+
+.box-top a {
+
+    text-decoration: none;
+
+    color: black;
+
+    padding-bottom: 10px;
+
+}
+
+.box-top-01 {
+
+    margin-left: 50px
+
+}
+
+.box-top-02 {
+
+    margin-left: 100px;
+
+}
+
+.box-top a:hover {
+
+    color: blue;
+
+    border-bottom: 1px solid blue;
+
+}
+
+.box-middle {
+
+    height: 300px;
+}
+
+.address {
+
+    font-size: 16px;
+
+    margin-top: 30px;
+
+    color: rgb(146, 144, 144);
+}
+
+.biao1 {
 
     width: 240px;
 
-    height : 40px;
+    height: 40px;
 
-    margin-left:10px;  
+    margin-left: 10px;
 
-    border-radius : 5%;
+    border-radius: 5%;
 
 }
-#sel{
+
+#sel {
 
     width: 112px;
 
-    height : 40px;
+    height: 40px;
 
-    border-radius : 5%;
+    border-radius: 5%;
 }
-.password{
 
-    font-size:16px;
+.password {
 
-    margin-top:30px;
+    font-size: 16px;
 
-    color:rgb(146, 144, 144);
+    margin-top: 30px;
+
+    color: rgb(146, 144, 144);
 }
-.biao2{
+
+.biao2 {
 
     width: 380px;
 
-    height : 40px;
+    height: 40px;
 
-    margin-left:10px;   
+    margin-left: 10px;
 
-    border-radius : 5%;
+    border-radius: 5%;
 }
-.p2{
 
-margin-left:30px;
+.p2 {
 
-}
-label{
-
-color:#aaa;
-
-font-size:14px;
+    margin-left: 30px;
 
 }
-.load-01{
 
-width:150px;
+label {
 
-height:50px;
+    color: #aaa;
 
-margin-left:21px;
-
-margin-top:42px;
-
-line-height:50px;
-
-text-align:center;
-
-font-size:20px;
-
-color:#fff;
-
-background-color:rgb(78, 78, 226);
-
-border-radius:5%;
+    font-size: 14px;
 
 }
-.insert-01{
 
-    width:150px;
-    
-    height:50px;
-    
-    border:1px solid black;
+.load-01 {
 
-    margin:-52px 0px 0px 225px;
+    width: 150px;
 
-    text-align:center;
+    height: 50px;
 
-    line-height:50px;
+    margin-left: 21px;
 
-    background-color:rgb(181, 181, 236);
+    margin-top: 42px;
 
-    border-radius:5%;
-    
-    }
-.insert-01 a{
+    line-height: 50px;
 
-      text-decoration: none;
+    text-align: center;
 
-      color:#fff;
+    font-size: 20px;
 
-      font-size:20px;
+    color: #fff;
 
-    }
-.smile{
+    background-color: rgb(78, 78, 226);
 
-width:400px;
-
-height:146px;
+    border-radius: 5%;
 
 }
-.forget{
 
-    color:blue;
+.insert-01 {
 
-    font-size:14px;
+    width: 150px;
 
-    margin-left:165px;
+    height: 50px;
+
+    border: 1px solid black;
+
+    margin: -52px 0px 0px 225px;
+
+    text-align: center;
+
+    line-height: 50px;
+
+    background-color: rgb(181, 181, 236);
+
+    border-radius: 5%;
+
+}
+
+.insert-01 a {
+
+    text-decoration: none;
+
+    color: #fff;
+
+    font-size: 20px;
+
+}
+
+.smile {
+
+    width: 400px;
+
+    height: 146px;
+
+}
+
+.forget {
+
+    color: blue;
+
+    font-size: 14px;
+
+    margin-left: 165px;
 
     text-decoration: none;
 
 }
+
 /* 网易注册页面的最下面部分 */
-.footer{
+.footer {
 
-    width:1000px;
+    width: 1000px;
 
-    height:65px;
-   
-    margin:0 auto;
+    height: 65px;
 
-    margin-top:25px;
-}
-.footer-left{
+    margin: 0 auto;
 
-
-width:92px;
-
-height:33px;
-
-
+    margin-top: 25px;
 }
 
-.footer-left a img{
+.footer-left {
 
-    width:92px;
+    width: 92px;
 
-    height:33px;
-
-}
-.footer-right-top{
-
-float:left;
-
-width:1000px;
-
-height:24px;
-
-margin-top:-35px;
-
+    height: 33px;
 
 }
 
-.footer-right-top a{
+.footer-left a img {
 
+    width: 92px;
 
- color:#aaa;
-
- font-size:12px;
-
-padding-left:10px;
-
-text-decoration: none;
-
+    height: 33px;
 
 }
-.footer-right-top-01{
 
-margin-left:150px;
+.footer-right-top {
+
+    float: left;
+
+    width: 1000px;
+
+    height: 24px;
+
+    margin-top: -35px;
 
 }
-.footer-right-bottom{
 
-    float:left;
+.footer-right-top a {
 
-    width:1000px;
+    color: #aaa;
 
-    height:24px;
+    font-size: 12px;
 
-    font-size:12px;
-    
+    padding-left: 10px;
+
+    text-decoration: none;
+
 }
+
+.footer-right-top-01 {
+
+    margin-left: 150px;
+
+}
+
+.footer-right-bottom {
+
+    float: left;
+
+    width: 1000px;
+
+    height: 24px;
+
+    font-size: 12px;
+
+}
+
 .footer-right-bottom-01 {
 
-margin-left:190px;
+    margin-left: 190px;
 
 }
-.footer-right-bottom a{
 
-    padding-left:8px;
+.footer-right-bottom a {
 
-    color:#aaa;
+    padding-left: 8px;
 
-    font-size:12px;
+    color: #aaa;
+
+    font-size: 12px;
 
     text-decoration: none;
-    
-    }
+
+}
