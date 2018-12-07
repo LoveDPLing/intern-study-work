@@ -51,20 +51,26 @@
                         <li>注册VIP邮箱</li>
                     </a>
                 </ul><br /><br />
+                <!-- 邮箱的注册 -->
                 <p class="address"> *&nbsp邮箱地址：&nbsp<input type="text" class="biao1" name="biao1" id="email1">&nbsp
                     @&nbsp<select id="sel">
                         <option value="1" selected="selected">163.com</option>
                         <option value="2">126.com</option>
                         <option value="3">yeah.net</option>
                     </select> </p>
+                    <div class="emm"></div>
                 <div class="email-error"></div>
                 <p class="p1" id="p1-show">6~18个字符，可使用字母、数字、下划线，需以字母开头</p>
+                <!-- 密码的申请 -->
                 <p class="password"> *&nbsp密码：&nbsp<input type="text" class="biao2" id="password1"></p>
                 <p class="p1" id="pass1">6~16个字符，区分大小写</p>
+                <!-- 再次确认密码 -->
                 <p class="confirm-password"> *确认密码：&nbsp<input type="text" class="biao2" id="password2"></p>
                 <p class="p1" id="pass2">请再次填写密码 </p>
-                <p class="telephone"> *手机号码：&nbsp<input type="text" class="biao2" id="phone1" placeholder="+86"></p>
+                <!-- 手机号码的输入 -->
+                <p class="telephone"> *手机号码：&nbsp<input type="text" class="biao2" id="phone1" placeholder="+86" maxlength="11"></p>
                 <p class="p1" id="phone-1"> 忘记密码时，可以通过该手机号码快速找回密码 </p>
+                <!-- 图片验证码 -->
                 <p class="code">*&nbsp验证码：&nbsp<input type="text" value="" placeholder="请输入验证码" class="biao1" id="code1">
                     <a href="#" id="changeImg">
                         <canvas class="show-captcha" id="canvas" width="150" height="40"></canvas>
@@ -72,11 +78,14 @@
                     </a>
                     <p class="p-1" id="code-1"> 请填写表格中的字符，区分大小写</p>
                     <button class="phone-code">获取免费验证码</button>
-                    <p class="messager"> *短信验证码：&nbsp<input type="text" class="biao2" id="messager1"></p>
+                    <!-- 获取短信验证码 -->
+                    <p class="messager"> *短信验证码：&nbsp<input type="text" class="biao2" id="messager1" maxlength="6"></p>
                     <p class="p1" id="messager-01">请查收手机短信，并填写短信中的验证码 </p>
+                    <!-- 同意部分 -->
                     <input class="p2" type="radio" name="contrue" value="0" id="s1" /><label for="s1">
                         同意<a href="javascript:void(0)" title="*">"服务条款"</a>和<a href="javascript:void(0)" title="*">"隐私权相关政策"</a>
                     </label>
+                    <!-- 立即注册部分 -->
                     <div class="last">立即注册</div>
             </div>
             <!-- 主体正文右半部分 -->

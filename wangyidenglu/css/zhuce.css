@@ -159,13 +159,12 @@ li{
 
     border-radius : 5%;
 }
+/* 邮箱错误提示框 */
 .email-error{
 
    width:300px;
 
    height:50px;
-   
-   border:1px solid red;
 
    margin-left:185px;
 
@@ -177,7 +176,7 @@ li{
 
    line-height:50px;
 
-   background-color:#fff;
+   background-color:rgb(229, 229, 236);
 
 }
 .p1{
@@ -252,7 +251,7 @@ input::-webkit-input-placeholder{
 
     background-color:rgb(124, 228, 124);
 
-    margin : 5px 0px 0px 185px;
+    margin : 18px 0px 0px 185px;
 
     text-align : center;
 
@@ -262,21 +261,7 @@ input::-webkit-input-placeholder{
 
     font-family: 宋体；
 }
-/* .registered > a:link{
 
-    background-color:white;
-
-} */
-
-/* .registered > a:visited{
-
-   background-color:blue;
-} */
-/* .registered :first-child{
-
-    background-color:blue;
-
-} */
 .registered  a:hover{
 
     background-color:blue;
@@ -287,11 +272,7 @@ input::-webkit-input-placeholder{
 
     width:30%;
 
-    /* background : yellow; */
-
     float : right;
-/* 
-    background-image: url(images/邮箱大师.gif); */
 
 }
 .photo img{
@@ -340,7 +321,8 @@ margin-left:2px;
 
     margin: 27px 0px 0px 185px;
 }
-/* em{
+/* 错误提示上的小三角形 */
+.emm{
     width : 0;
 
     height :0 ;
@@ -349,7 +331,14 @@ margin-left:2px;
 
     border-style:solid;
 
-    border-color : transparent transparent red;
+    border-color : transparent transparent rgb(229, 229, 236);
    
-    margin :-17px 0px 0px -30px;
-} */
+    margin :0px 0px 0px 320px;
+
+    display:none;
+}
+/* 验证码 */
+#canvas{
+
+margin:0px 0px -13px 0px;
+}

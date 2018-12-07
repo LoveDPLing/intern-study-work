@@ -9,6 +9,7 @@ margin:0;
 padding:0;
 
 }
+/* 网易注册页面的最上面的部分 */
 .header{
 
  width:1000px;
@@ -98,6 +99,7 @@ float:left;
  text-decoration: none;
 
 }
+/* 网易注册页面的中间部分 */
 .main{
 
     width:100%;
@@ -293,6 +295,7 @@ height:146px;
     text-decoration: none;
 
 }
+/* 网易注册页面的最下面部分 */
 .footer{
 
     width:1000px;
