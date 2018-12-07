@@ -146,7 +146,8 @@
        $('#password2').val("");
        $('#phone1').val("");
        $('#code1').val("");
-       $('#messager1').val("");		
+       $('#messager1').val("");
+       $('#s1').prop('checked',false);	
         }else{  
             alert("有错误！！！");
         }
