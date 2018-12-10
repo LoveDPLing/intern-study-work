@@ -182,7 +182,7 @@ $(function () {
                 localStorage.setItem("password", password);
                 var i = window.confirm("您已注册成功，点击确认将跳转到登陆页面");
                 if (i != 0) {
-                    window.location = "enter.html";
+                    window.location = "login.html";
                 }
             }
         }

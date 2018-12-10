@@ -1,4 +1,5 @@
 $(function () {
+    var bac=["rgb(234, 233, 233)","rgb(241, 242, 246)","rgb(254, 238, 228)"];
     var index = 0;//用index记录下标,默认为0
     var lis = $('.slider ul li');
     //1.右边箭头点击事件
@@ -12,7 +13,8 @@ $(function () {
             index = 0;
         }
         //显示对应下标的图片,让其他兄弟隐藏
-        lis.eq(index).fadeIn().siblings().fadeOut();
+        $("#main").css("background-color", bac[index]);
+        lis.eq(index).show().siblings().hide();
         //给对应下标的小圆点按钮添加current类名,其他兄弟移除current类名
     }
     //2.左边箭头点击事件
@@ -22,8 +24,9 @@ $(function () {
         if (index < 0) {
             index = lis.length - 1;
         }
+        $("#main").css("background-color", bac[index]);
         //显示对应下标的图片,让其他兄弟隐藏
-        lis.eq(index).fadeIn().siblings().fadeOut();
+        lis.eq(index).show().siblings().hide();
         //给对应下标的小圆点按钮添加current类名,其他兄弟移除current类名
     });
     // 对按钮的逻辑验证
