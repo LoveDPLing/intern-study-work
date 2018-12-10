@@ -1,25 +1,25 @@
-header {
+.register header  {
     width: 960px;
     height: 80px;
     margin: 0 auto;
     position: relative;
 }
-.header-log {
+.register header .header-log {
     position: absolute;
     left: 0;
     top: 30px;
 }
-.header-log>a{
+header .header-log>a{
     width: 130px;
     height: 25px;
     display: block;
     float: left;
 }
-.header-log img {
+header .header-log img {
     width: 130px;
     height: 25px;
 }
-.header-log span {
+header .header-log span {
     width: 130px;
     height: 25px;
     text-align: center;
@@ -28,43 +28,43 @@ header {
     border-left: 1px solid #666666;
     padding-left: 5px;
 }
-.links {
+.register header .links {
     position: absolute;
     top: 35px;
     right: 0;
     width: 200px;
 }
-.links a {
+header .links a {
     margin-left: 5px;
     margin-right: 5px;
     color: #3182d9;
 }
 /*表单主体*/
-.container {
+.register .container {
     width: 960px;
     margin: 0 auto;
     background-color: #FFFFFF;
     height: 730px;
 }
-.container-h1 {
+.register .container .container-h1 {
    height: 36px;
     background-color: #6495C6;
     border-radius: 3px;
 }
-.mainbody {
+.register .container .mainbody {
     width: 580px;
     height: 620px;
     padding: 50px 0 0 60px;
     float: left;
 }
-dl {
+.mainbody .regmain dl {
     display: block;
     clear: both;
     width: 510px;
     height: 70px;
 
 }
-.regtabs {
+.container .mainbody .regtabs {
     padding-left: 55px;
     height: 40px;
     width: 150px;
@@ -74,7 +74,7 @@ dl {
     border-radius: 5px 5px 5px 5px ;
     margin-bottom: 30px;
 }
-.txt-impt {
+.regtabs .reg-email .txt-impt {
     font-size: 18px;
     color: #c00;
     display: block;
@@ -82,55 +82,55 @@ dl {
     margin-top: 3px;
     float: left;
 }
-.regform-input input {
+.reg-email .regform-input input {
     padding: 4px 5px;
     border-radius: 5px;
     width: 320px;
     border: 1px solid #ababab;
 }
 
-.regmain {
+.container .mainbody .regmain {
     padding-left: 9px;
     position: relative;
 }
-.regform-tit {
+.mainbody .reg-email .regform-tit {
     font-size: 14px;
     text-align: right;
     float: left;
     margin-top: 5px;
 }
-.regform-input {
+.mainbody .reg-email .regform-input {
     float: left;
     margin-left: 20px;
     margin-right: 5px;
     border-radius: 5px;
 }
-.regform-sel {
+.reg-email .regform-input .regform-sel {
     padding: 3px;
     margin-left: 5px;
     font-size: 14px;
 
 }
-.tips {
+.reg-email .regform-input .tips {
     padding: 5px 0 5px;
 }
-.regext {
+.container .regext {
     padding: 110px 0 0 50px;
     margin-right: 60px;
 }
-.verification {
+.regform-input .verification {
     background-color: #3182d9;
     float: right;
     margin-top: -10px;
     margin-left: 10px;
 }
-.ver-img {
+.regform-input .tips  .ver-img {
     display: block;
     margin-left: 10px;
     float: right;
-    margin-top: 5px;
+    margin-top: 10px;
 }
-.btns {
+.reg-email .regform-input .btns {
     display: block;
     height: 30px;
     width: 150px;
@@ -140,14 +140,14 @@ dl {
     border-radius: 5px;
     color: #000;
 }
-.accept {
+.mainbody .regmain .accept {
     margin-left: 90px;
     height: 20px;
 }
-.accept a {
+.regmain .accept a {
     color: #039;
 }
-.immediately a {
+.mainbody .regmain .immediately a {
     display: block;
     width: 120px;
     height: 40px;
@@ -160,25 +160,28 @@ dl {
     border-radius: 5px;
 }
 /*底部*/
-footer {
+.register footer {
     height: 80px;
 }
-.footer-links {
+.register footer .footer-links {
     width: 960px;
     height: 80px;
     margin: 0 auto;
     text-align: center;
 }
-.footer-links a {
+footer .footer-links a {
     display: inline-block;
     margin-left: 10px;
     margin-top: 20px;
 }
+
 /*表单验证的样式*/
-#usercodeRight,#usercodeError,#usernameRight,#usernameError,#userpasswordRight,
-#userpasswordError,#userpassword1Error,#userpassword1Right,#userphoneRight,#userphoneError
-,#usernoteRight,#usernoteError
-{
+#usercodeError, #usernameError, #userpasswordError, #userpassword1Error, #userphoneError, #usernoteError {
     display: none;
     color: red;
+}
+
+#usercodeRight, #usernameRight, #userpasswordRight, #userpassword1Right, #usernoteRight, #userphoneRight {
+    display: none;
+    color: #3182d9;
 }
