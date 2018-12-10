@@ -1,0 +1,519 @@
+body{
+
+   widows: 100%;
+
+   height:770px;
+
+   margin:0;
+
+   padding:0;
+
+}
+/* 网易注册页面的最上面的部分 */
+.header{
+
+    width:1000px;
+
+    height:64px;
+  
+    margin:0 auto;
+
+}
+.header .header-left{
+
+    width:280px;
+
+    height:100%;
+
+    float:left;
+
+}
+.header .header-left .header-01{
+
+    width:136px;
+
+    height:100%;
+
+}
+.header .header-left .header-01 img{
+
+    width:136px;
+
+    height:32px;
+   
+    margin-top:17px;
+
+}
+.header .header-left .header-left-01{
+
+    width:0.8px;
+
+    height:25px;
+
+    background-color:#aaa;
+
+    margin:-32px 0px 0px 150px;
+
+}
+.header .header-left .header-left-02{
+
+    width:157px;
+
+    height:28px;
+
+    font-size:15px;
+
+    text-align:center;
+
+    line-height:28px;
+
+    margin: -28px 0px 0px 145px;
+
+    color:#aaa;
+}
+.header .header-right{
+
+    float:right;
+
+    width:550px;
+
+    height:30px;
+
+    margin-top:18px;
+
+}
+.header .header-right a{
+
+    font-size:13px;
+
+    color:#aaa;
+
+    height:30px;
+
+    margin-left: 8px;
+
+    text-decoration: none;
+
+}
+/* 网易注册页面的中间部分 */
+.main{
+
+    width:100%;
+
+    height:600px;
+
+}
+.main .main-inner{
+
+    width:1000px;
+
+    height:600px;
+
+    margin:0 auto;
+
+}
+
+.box-top-1 a,.box-top-2 a{
+
+    text-decoration: none;
+
+    color:#fff;
+
+    line-height:80px;
+
+    padding-left:5px;
+
+
+}
+.main .main-inner .box-top-1{
+
+    width:80px;
+
+    height:80px;
+ 
+    margin:87px 0px 0px 522px;
+ 
+    background-color:rgb(181, 181, 236);
+
+    border-radius:50%;
+
+    font-size:20px;
+ 
+    position: absolute;
+ 
+    box-shadow: 1px 3px 10px #aaa;
+
+    border-radius:50%;
+
+    font-size: 12px;
+
+    color:rgb(185, 149, 149);
+    
+}
+.main .main-inner .box-top-2{
+
+    width:80px;
+
+    height:80px;
+ 
+    margin:87px 0px 0px 840px;
+ 
+    background-color:rgb(181, 181, 236);
+
+    border-radius:50%;
+
+    color:#fff;
+
+    font-size:20px;
+ 
+    position: absolute;
+ 
+    box-shadow: 1px 3px 10px #aaa;
+
+    color:rgb(185, 149, 149);
+
+    font-size: 12px;
+
+}
+.main .main-inner .box-top-1 .box-top-01{
+
+    width:80px;
+
+    height:80px;
+
+}
+.main .main-inner .box-top-2 .box-top-02{
+    width:80px;
+
+    height:80px;
+}
+.box-top-1 a:hover,.box-top-2 a:hover{
+
+    color:blue;
+    
+    border-bottom:1px solid blue;
+    
+}
+.main .main-inner .box-middle{
+
+    width:400px;
+
+    height:400px;
+
+    margin:110px 0px 0px 520px;
+
+    background-color:#fff;
+
+    position: absolute;
+
+    box-shadow: 1px 3px 10px #aaa;
+
+    border-radius:50%;
+}
+.main .main-inner .box-middle .address{
+
+    width: 379px;
+
+    height : 46px;
+
+    font-size:16px;
+
+    margin-top:137px;
+
+    margin-left: 10px;
+
+    color:rgb(146, 144, 144);
+
+    background:url(../images/账户.png) no-repeat 0% 50%;
+
+    border:1px solid rgb(156, 156, 228);
+
+    border-radius:5%;
+
+} 
+
+.biao1{
+
+    width: 196px;
+
+    height : 42px;
+
+    margin-left:35px;  
+
+    border-radius : 1%;
+
+    border:1px solid #fff;
+
+}
+.symbol{
+
+    margin:12px 0px 0px 17px;
+
+    position: absolute;
+
+    color:rgb(146, 144, 144);
+
+}
+#sel{
+
+    width: 112px;
+
+    height : 30px;
+
+    border-radius : 10%;
+
+    margin:8px 0px 0px 34px;
+
+    position: absolute;
+
+    border:1px solid #fff;
+
+    color:rgb(146, 144, 144);
+}
+.main .main-inner .box-middle .password{
+   
+    width: 379px;
+
+    height : 46px;
+
+    font-size:16px;
+
+    margin-top:30px;
+
+    margin-left: 10px;
+
+    background:url(../images/密码.png) no-repeat 0% 50%;
+
+    color:rgb(146, 144, 144);
+
+    border:1px solid rgb(156, 156, 228);
+
+    border-radius:5%;
+}
+.biao2{
+
+    width: 196px;
+
+    height : 42px;
+
+    margin-left:35px;   
+
+    border-radius : 1%;
+
+    border:1px solid #fff;
+}
+.main .main-inner .box-middle .p2{
+
+    margin-left:30px;
+
+}
+label{
+
+    color:#aaa;
+
+    font-size:14px;
+
+}
+.main .main-inner .box-middle .load-01{
+
+    width:80px;
+
+    height:80px;
+
+    margin-left:5px;
+
+    margin-top:51px;
+
+    position: absolute;
+
+    line-height:80px;
+
+    text-align:center;
+
+    color:#fff;
+
+    background-color:rgb(78, 78, 226);
+
+    border-radius:50%;
+
+}
+.main .main-inner .box-middle .insert-01{
+
+    width:80px;
+    
+    height:80px;
+
+    margin:49px 0px 0px 317px;
+
+    position: absolute;
+
+    text-align:center;
+
+    line-height:80px;
+
+    background-color:rgb(181, 181, 236);
+
+    border-radius:50%;
+
+    color:#fff;
+
+    font-size:20px;
+    
+}
+.main .main-inner .box-middle .insert-01 a{
+
+    text-decoration: none;
+
+    color:#fff;
+
+    font-size:20px;
+
+}
+.smile{
+
+    width:400px;
+
+    height:146px;
+
+}
+.main .main-inner .main-bottom{
+
+    width:200px;
+
+    height:60px;
+
+    margin:550px 0px 0px 850px;
+
+    text-align:center;
+
+    position: absolute;
+
+    line-height: 60px;
+
+}
+.main .main-inner .main-bottom #left {
+
+    text-decoration: none;
+
+    margin-right:10px;
+    
+    color: rgb(179, 182, 179);
+
+    background-color:rgb(114, 112, 112);
+
+    padding:0px 10px;
+
+    border-radius: 50%;
+ 
+    font-size: 20px;
+ 
+    z-index: 2;
+   
+}
+.main .main-inner .main-bottom #right {
+
+    text-decoration: none;
+
+    color: rgb(179, 182, 179);
+ 
+    padding:0px 10px;
+
+    border-radius: 50%;
+
+    font-size: 20px;
+
+    z-index: 2;
+
+    background-color:rgb(114, 112, 112);
+ 
+}
+.forget{
+
+    color:blue;
+
+    font-size:14px;
+
+    margin-left:165px;
+
+    text-decoration: none;
+
+}
+/* 网易注册页面的最下面部分 */
+.footer{
+
+    width:1000px;
+
+    height:65px;
+   
+    margin:0 auto;
+
+    margin-top:25px;
+}
+.footer .footer-left{
+
+    width:92px;
+
+    height:33px;
+
+}
+.footer .footer-left a img{
+
+    width:92px;
+
+    height:33px;
+
+}
+.footer .footer-right-top{
+
+    float:left;
+
+    width:1000px;
+
+    height:24px;
+
+    margin-top:-35px;
+
+}
+.footer .footer-right-top a{
+
+    color:#aaa;
+
+    font-size:12px;
+
+    padding-left:10px;
+
+    text-decoration: none;
+
+}
+.footer-right-top-01{
+
+    margin-left:150px;
+
+}
+.footer .footer-right-bottom{
+
+    float:left;
+
+    width:1000px;
+
+    height:24px;
+
+    font-size:12px;
+    
+}
+.footer .footer-right-bottom-01 {
+
+    margin-left:190px;
+
+}
+.footer .footer-right-bottom a{
+
+    padding-left:8px;
+
+    color:#aaa;
+
+    font-size:12px;
+
+    text-decoration: none;
+    
+}

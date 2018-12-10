@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>网易登陆页面</title>
-    <link rel="stylesheet" type="text/css" href="css/denglu.css">
-    <script type="text/javascript" src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/onLoad.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
 </head>
 <body>
     <!-- 网易登陆页面的最上面的部分 -->
@@ -33,20 +33,21 @@
         </div>
     </div>
     <!-- 网易登陆页面的中间的部分 -->
+    <!-- 登陆部分 -->
     <div class="main" style="background-color:rgb(236, 237, 239)">
-        <!-- 中间部分的背景图片 -->
         <div class="main-inner" style="background:url(images/denglu1.png) no-repeat">
-        </div>
-        <!-- 登陆部分 -->
-        <div class="main-box">
-            <div class="box-top">
+            <!-- <div class="main-box"> -->
+            <div class="box-top-1">
                 <a href="javascript:void(0)" title="*" class="box-top-01">二维码登陆</a>
+            </div>
+            <div class="box-top-2">
                 <a href="javascript:void(0)" title="*" class="box-top-02">邮箱账号登陆</a>
             </div>
             <div class="box-middle">
-                <p class="address"><input type="text" class="biao1" name="biao1" placeholder="请输入邮箱" id="email-001">&nbsp
-                    @&nbsp<select id="sel">
-                        <option value="1" selected="selected">163.com</option>
+                <p class="address"><input type="text" class="biao1" name="biao1"  id="email-001" placeholder="请输入邮箱">
+                    <span class="symbol">@</span>
+                    <select id="sel" display="none">
+                        <option value="1" selected="selected"> 163.com</option>
                         <option value="2">126.com</option>
                         <option value="3">yeah.net</option>
                     </select> </p>
@@ -56,13 +57,16 @@
                 </label>
                 <a href="javascript:void(0)" title="*" class="forget"> 忘记密码？</a>
                 <div class="load-01" id="loading">登陆</div>
-                <div class="insert-01"><a target="_blank" href="zhuceyemian.html" title="注册页面">注册</a></div>
+                <div class="insert-01"><a target="_blank" href="registered.html" title="注册页面">注册</a></div>
             </div>
-            <img src="images/微笑.png" class="smile">
-            <div class="box-bottom"></div>
+            <div class="main-bottom">
+                    <a href="javascript:void(0);" rel="external nofollow"  id="left"><</a>
+                         <a href="javascript:void(0);" rel="external nofollow" id="right">></a>
+                      </div>
         </div>
+   </div>
     </div>
-     <!-- 网易登陆页面的最下面的部分 -->
+    <!-- 网易登陆页面的最下面的部分 -->
     <div class="footer">
         <div class="footer-left"><a><img src="images/QQ图片网易.png" alt="*"></a></div>
         <div class="footer-right-top"><a href="javascript:void(0)" title="*">企业邮箱</a>
@@ -81,6 +85,6 @@
             <span style=" color:#ccc">（数据来源：艾媒邮箱报告）</span>
         </div>
     </div>
-    <script type="text/javascript" src="js/denglu.js"></script>
+    <script type="text/javascript" src="js/onLoad.js"></script>
 </body>
 </html>

@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>网易注册界面</title>
-    <link rel="stylesheet" type="text/css" href="css/zhuce.css">
-    <script type="text/javascript" src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/registered.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
 </head>
 <body>
     <!-- 这是头部 -->
@@ -34,7 +34,7 @@
     <div class="content">
         <!-- 主体开头部分  -->
         <div class="top-left">
-            <h1>欢迎注册无限容量网易邮箱！邮件地址可以登录使用其他网易旗下产品。</h1>
+            <h1 style="color:rgb(192, 219, 189)">欢迎注册无限容量网易邮箱！邮件地址可以登录使用其他网易旗下产品。</h1>
         </div>
         <!-- 主体正文部分 -->
         <div class="main">
@@ -52,25 +52,31 @@
                     </a>
                 </ul><br /><br />
                 <!-- 邮箱的注册 -->
-                <p class="address"> *&nbsp邮箱地址：&nbsp<input type="text" class="biao1" name="biao1" id="email1">&nbsp
-                    @&nbsp<select id="sel">
+                <p class="address"> *&nbsp邮箱地址：&nbsp<input type="text" class="biao1" name="biao1" id="email1" list="email01">
+                    <datalist id="email01" size="3">
+                        <option value="11111">
+                        <option value="a11111">
+                        <option value="aa11111">
+                    </datalist>
+                    &nbsp@&nbsp<select id="sel">
                         <option value="1" selected="selected">163.com</option>
                         <option value="2">126.com</option>
                         <option value="3">yeah.net</option>
                     </select> </p>
-                    <div class="emm"></div>
+                <div class="emm"></div>
                 <div class="email-error"></div>
                 <p class="p1" id="p1-show">6~18个字符，可使用字母、数字、下划线，需以字母开头</p>
                 <!-- 密码的申请 -->
-                <p class="password"> *&nbsp密码：&nbsp<input type="text" class="biao2" id="password1"></p>
+                <p class="password"> *&nbsp密码：&nbsp<input type="password" class="biao2" id="password1"></p>
                 <p class="p1" id="pass1">6~16个字符，区分大小写</p>
                 <p class="p1-01" id="pass1-01">密码长度应为6-18</p>
                 <!-- 再次确认密码 -->
-                <p class="confirm-password"> *确认密码：&nbsp<input type="text" class="biao2" id="password2"></p>
+                <p class="confirm-password"> *确认密码：&nbsp<input type="password" class="biao2" id="password2"></p>
                 <p class="p1" id="pass2">请再次填写密码 </p>
                 <p class="p1-01" id="pass2-01">确认密码错误！ </p>
                 <!-- 手机号码的输入 -->
-                <p class="telephone"> *手机号码：&nbsp<input type="text" class="biao2" id="phone1" placeholder="+86" maxlength="11"></p>
+                <p class="telephone"> *手机号码：&nbsp<input type="text" class="biao2" id="phone1" placeholder="+86"
+                        maxlength="11"></p>
                 <p class="p1" id="phone-1"> 忘记密码时，可以通过该手机号码快速找回密码 </p>
                 <p class="p1-01" id="phone-1-01"> 请填写正确的手机号码 </p>
                 <!-- 图片验证码 -->
@@ -108,7 +114,7 @@
             <a href="#">隐私政策</a>
             | 网易公司版权所有 © 1997-2015 </p>
     </div>
-    <script type="text/javascript" src="js/zhuce.js"></script>
+    <script type="text/javascript" src="js/registered.js"></script>
     <script type="text/javascript" src="js/code.js"></script>
 </body>
 </html>

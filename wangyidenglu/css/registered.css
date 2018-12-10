@@ -26,7 +26,7 @@
     box-shadow: 0 1px 5px #aaa;
   
 }    
- .footer{
+.footer{
 
     width:960px;
 
@@ -51,16 +51,20 @@ body{
    font-size:12px; 
 
 }
+a{
 
+    text-decoration: none;
+
+}
 /* 头部包含的css */
-.logo{
+.header .logo{
 
     height : 70px;
 
     margin:-41px 0px 0px -40px;
 
 }
-li{
+.header .logo ul li{
 
     margin-top:1px;
 
@@ -69,13 +73,13 @@ li{
     list-style: none;
 
 }
-.links{
+.header .links{
     
     margin-top:-40px;
 
     float:right;
 }
-.top-left{
+.content .top-left{
 
     font-size:8px;
 
@@ -85,20 +89,20 @@ li{
 
     line-height:38px;
 
-    background-color:rgb(120, 147, 201);
+    background-color:rgb(157, 172, 204);
 
     margin-top:-11px;
 
 
 }
 /* 主体下的所有div */
-.main{
+.content .main{
 
    height: 622px;
 
 }
 /* 主体下的左半部分 */
-.left{
+.content .main .left{
 
     height:100%;
 
@@ -110,14 +114,16 @@ li{
 
 }
 
-.registered{
+.content .main .left .registered{
 
     margin:40px 0px 0px 60px;
 
 }
-.registered a{
+.content .main .left .registered a{
 
     float:left;
+
+    margin-right:5px;
 
     list-style:none;
 
@@ -125,24 +131,31 @@ li{
 
     height:30px;
 
-    border: 0.5px solid black;
+    text-decoration: none;
+
+    border:10%;
+    
+    color:#fff;
+
+    background-color:rgb(181, 181, 236);
 
 }
-.registered  a  li {
+.content .main .left .registered  a  li {
 
     margin-left:40px;
 
     line-height:30px;
 
 }
- .address{
+.content .main .left .address{
 
     font-size:15px;
 
     margin:30px 0px 0px 95px;
     
 } 
-.biao1{
+
+.content .main .left .biao1{
 
     width: 200px;
 
@@ -151,7 +164,7 @@ li{
     border-radius : 5%;
 
 }
-#sel{
+.content .main .left .address #sel{
 
     width: 120px;
 
@@ -160,38 +173,40 @@ li{
     border-radius : 5%;
 }
 /* 邮箱错误提示框 */
-.email-error{
+.content .main .left .email-error{
 
-   width:300px;
+    width:300px;
 
-   height:50px;
+    height:30px;
 
-   margin-left:185px;
+    margin-left:185px;
 
-   color:red;
+    color:red;
 
-   display:none;
+    display:none;
 
-   text-align:center;
+    text-align:center;
 
-   line-height:50px;
+    line-height:30px;
 
-   background-color:rgb(229, 229, 236);
+    background-color:rgb(229, 229, 236);
+
+    font-size:15px;
 
 }
-.p1{
+.content .main .left .p1{
 
     margin:5px 0px 0px 190px;
 
 }
-.password{
+.content .main .left .password{
 
     font-size:15px;
 
     margin:10px 0px 0px 125px;
 
 }
-.biao2{
+.content .main .left .biao2{
 
     width: 350px;
 
@@ -200,7 +215,7 @@ li{
     border-radius : 5%;
 
 }
-.p1-01{
+.content .main .left .p1-01{
 
     margin:5px 0px 0px 190px;
 
@@ -209,14 +224,14 @@ li{
     display:none;
 
 }
-.confirm-password{
+.content .main .left .confirm-password{
 
     font-size:15px;
 
     margin:10px 0px 0px 100px;
 
 }
-.telephone{
+.content .main .left .telephone{
 
     font-size:15px;
 
@@ -228,30 +243,30 @@ input::-webkit-input-placeholder{
     color:black;
 
 }
-.code{
+.content .main .left .code{
 
     font-size:15px;
 
     margin:10px 0px 0px 112px;
 
 }
-.messager{
+.content .main .left .messager{
 
     font-size:15px;
 
     margin:10px 0px 0px 85px;
 
 }
-.p2{
+.content .main .left .p2{
 
     margin:15px 0px 0px 190px;
 
 }
-.p-1{
+.content .main .left .p-1{
 
     margin:-16px 0px 0px 190px;
 }
-.p-1-01{
+.content .main .left .p-1-01{
 
     margin:-16px 0px 0px 190px;
 
@@ -260,13 +275,13 @@ input::-webkit-input-placeholder{
     display: none;
 }
 
-.last{
+.content .main .left .last{
 
     width : 90px;
 
     height : 40px;
 
-    background-color:rgb(124, 228, 124);
+    background-color:rgb(164, 223, 164);
 
     margin : 18px 0px 0px 185px;
 
@@ -276,38 +291,42 @@ input::-webkit-input-placeholder{
 
     font-size : 15px;
 
-    font-family: 宋体；
+    font-family: 宋体;
+
+    color : rgb(136, 131, 131);
+
+    border-radius:5%;
 }
 
-.registered  a:hover{
+.content .main .left .registered  a:hover{
 
     background-color:blue;
 
 }
 /* 主体下的右半部分 */
-.right{
+.content .main .right{
 
     width:30%;
 
     float : right;
 
 }
-.photo img{
+.content .main .right .photo img{
 
     width :285px;
 
     height : 300px;
 
 }
-.photo{
+.content .main .right .photo{
 
-margin-top:-450px;
+    margin-top:-450px;
 
-margin-left:2px;
+    margin-left:2px;
 
 }
 /* 主体下的尾部 */
-.footer-center{
+.footer .footer-center{
 
     margin-top:10px;
 
@@ -316,16 +335,17 @@ margin-left:2px;
 }
 
 .footer a{
-    background-color:#ccc;
+    color:rgb(165, 160, 160);
+
 }
 #changeImg{
 
-   margin:0 auto;
+    margin:0 auto;
 
 }
 .code-refresh{
 
-   margin-left:320px;
+    margin-left:320px;
 
 }
 .phone-code{
@@ -340,6 +360,7 @@ margin-left:2px;
 }
 /* 错误提示上的小三角形 */
 .emm{
+
     width : 0;
 
     height :0 ;
@@ -357,5 +378,6 @@ margin-left:2px;
 /* 验证码 */
 #canvas{
 
-margin:0px 0px -13px 0px;
+   margin:0px 0px -13px 0px;
+
 }
