@@ -1,0 +1,231 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.top{
+    width: 1000px;
+    height: 64px;
+    position: relative;
+    margin: 0 auto;
+    border-bottom: 1px solid #fff;
+}
+.top-c{
+    width: 90%;
+    height: 50px;
+    margin: 0 auto;
+    /* border: 1px solid #000; */
+}
+.top-l{
+    /* border: 1px solid #000; */
+    width: 30%;
+    height: 30px;
+    margin: 30px;
+}
+.top-r {
+    float: right;
+    padding: 3px;
+    margin-top: -60px;
+}
+a{
+    text-decoration: none;
+}
+.head {
+    float: right;
+    margin-right: -200px;
+}
+.head li {
+    float: left;
+    list-style: none;
+    margin: 3px;
+    font-size: 10px;
+    color:grey;
+    
+}
+.btns{
+    position: relative;
+    margin-left: 1000px;
+    margin-top: -50px;
+}
+
+/* .foot{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    margin-bottom: 100px;  
+} */
+.main{
+    width: 100%;
+    
+   
+}
+.login{
+    display: block;
+   position:absolute;
+   margin-left: 800px;
+   margin-top: -560px;
+   border: 1px solid #000;
+   width: 450px;
+   height: 489px; 
+}
+/* #input1 #input2{
+    position: relative;
+    width: 300px;
+    height: 40px;
+    margin-left: 40px;
+   margin-top: 10px;
+} */
+.title{
+    width: 450px;
+    height: 48px;
+    text-align: center;
+    font-size: 20px;
+    color: gray;
+}
+::placeholder{
+    margin-left: 20px;
+}
+
+
+#imgPerson{
+    width: 20px;
+    height: 20px;
+}
+#imgLock{
+    width: 25px;
+    height: 25px;
+    margin-left: 45px;
+    position: absolute;
+    margin-top: 30px;
+}
+.container{
+    width: 450px;
+    height: 441px;
+    /* border: 1px solid #000; */
+}
+.container-top{
+    width: 450px;
+    height: 347px;
+}
+.container-top-t{
+    width: 450px;
+    height: 253px;
+    /* border: 1px solid #000; */
+}
+/* .container .inputbox{
+    width: 330px;
+    height: 46px;
+    position: relative;
+    font-size: 12px;
+    border: 1px solid #000;
+} */
+/* .inputbox{
+    position: relative;
+    top: 15px;
+    left: 50px;
+
+} */
+#imgPerson{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin-left: 40px;
+    top: 50px;
+}
+
+
+.login{
+    width: 450px;
+    height: 489px;
+    background-color: #fff;
+}
+.title{
+    width: 450px;
+    height: 48px;
+}
+#btn1{
+    width:150px;
+    height: 50px;
+    background-color:rgb(0, 119, 255);
+    border-radius: 8px;
+    font-size: 20px;
+    color: aliceblue;
+    margin-left: 45px;
+    margin-top: 40px;
+}
+#btn2{
+    width: 150px;
+    height: 48px;
+    background-color:white;
+    color: blue;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+
+.foot{
+    margin-top: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.foot{
+    margin: 30px;
+    width: 100%;
+    height:150px;
+    background-color:white;
+}
+.foot-c{
+    width: 90%;
+    height: 50px;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+}
+.foot-rul li {
+  float: left;
+  list-style: none;
+  margin: 4px;
+  color: gray;
+  font-size: 10px;
+}
+.foot-li{
+    margin: 4px;
+}
+.foot .foot-l.im{
+    width: 100px;
+    height: 20px;
+    /* border: 1px solid #000; */
+}
+.im img{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.foot-r{
+  width: 800px;
+  height: 20px;
+  float: right;
+  margin-top: -45px;
+}
+
+
+
+
+
+ 
+
+
