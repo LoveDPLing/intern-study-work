@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>网易登陆页面</title>
-    <link rel="stylesheet" type="text/css" href="css/onLoad.css">
-    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/loading.css">
+    <script type="text/javascript" src="../jquery/jquery.min.js"></script>
 </head>
 <body>
     <!-- 网易登陆页面的最上面的部分 -->
@@ -36,35 +36,41 @@
     <!-- 登陆部分 -->
     <div class="main" style="background-color:rgb(236, 237, 239)">
         <div class="main-inner" style="background:url(images/denglu1.png) no-repeat">
-            <!-- <div class="main-box"> -->
-            <div class="box-top-1">
-                <a href="javascript:void(0)" title="*" class="box-top-01">二维码登陆</a>
-            </div>
-            <div class="box-top-2">
-                <a href="javascript:void(0)" title="*" class="box-top-02">邮箱账号登陆</a>
-            </div>
-            <div class="box-middle">
-                <p class="address"><input type="text" class="biao1" name="biao1"  id="email-001" placeholder="请输入邮箱">
+            <div class="box">
+               <div class="box-top">
+                    <a href="javascript:void(0)" title="*" class="box-top-01">二维码登陆</a>               
+                    <a href="javascript:void(0)" title="*" class="box-top-02">邮箱账号登陆</a>
+                </div>
+                <div class="box-middle">
+                <p class="address"><input type="text" class="biao1" name="biao1" id="email-001" placeholder="请输入邮箱" style="outline:none;">
                     <span class="symbol">@</span>
                     <select id="sel" display="none">
                         <option value="1" selected="selected"> 163.com</option>
                         <option value="2">126.com</option>
                         <option value="3">yeah.net</option>
                     </select> </p>
-                <p class="password"><input type="password" class="biao2" placeholder="请输入密码" id="password-001"></p>
+                <p class="password"><input type="password" class="biao2" placeholder="请输入密码" id="password-001" style="outline:none;"></p>
+                <div class="freeload">
                 <input class="p2" type="radio" value="0" id="s1" /><label for="s1">
                     十天内免登录
                 </label>
                 <a href="javascript:void(0)" title="*" class="forget"> 忘记密码？</a>
-                <div class="load-01" id="loading">登陆</div>
-                <div class="insert-01"><a target="_blank" href="registered.html" title="注册页面">注册</a></div>
+                </div>
+                <div class="load-01" id="loading">登&nbsp&nbsp陆</div>
+                <div class="insert-01"><a target="_blank" href="registered.html" title="注册页面">注&nbsp&nbsp册</a></div>
+                <img src="images/App.png" alt="*">
+            </div>
+            <div class="box-bottom">
+                <a href="javascript:void(0)" title="*" class="box-bottom-01">1212严选狂欢盛典！</a><br>
+                <a href="javascript:void(0)" title="*" class="box-bottom-02">网易邮箱提醒你谨防邮箱受骗</a>
+            </div>
             </div>
             <div class="main-bottom">
-                    <a href="javascript:void(0);" rel="external nofollow"  id="left"><</a>
-                         <a href="javascript:void(0);" rel="external nofollow" id="right">></a>
-                      </div>
+                 <div class="main-bottom-01"><a href="javascript:void(0);" rel="external nofollow" id="left"><</a></div>
+                  <div class="main-bottom-02"><a href="javascript:void(0);" rel="external nofollow" id="right">></a></div>
+            </div>
         </div>
-   </div>
+    </div>
     </div>
     <!-- 网易登陆页面的最下面的部分 -->
     <div class="footer">
@@ -85,6 +91,6 @@
             <span style=" color:#ccc">（数据来源：艾媒邮箱报告）</span>
         </div>
     </div>
-    <script type="text/javascript" src="js/onLoad.js"></script>
+    <script type="text/javascript" src="js/loading.js"></script>
 </body>
 </html>

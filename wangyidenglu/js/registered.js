@@ -1,35 +1,25 @@
 
 $(document).ready(function () {
-    var account, password001, password002, phonenumber, code001, code002, check1, check2, check3, check4, check5, check6, check7;
+    var account, password001, password002, phonenumber, code001, code002, check1, check2, check3, check4, check5, check6, check7, check8;
     //   监听邮箱账号变化
     $('#email1').on('input propertychange', function () {
         account = $('#email1').val();
         if ($('#email1').val() === "") {
-            $('.email-error').hide();
+            $('#address-01').hide();
             $('#p1-show').show();
         }
     });
-    var Regx = /^[a-zA-Z]/
+    var Regx = /^[a-zA-Z]\w{5,17}$/;
     //  离开焦点后发生变化
     $('#email1').blur(function () {
         //   首位必须是字母
         if (!Regx.test(account)) {
             $('#p1-show').hide();
-            $('.email-error').show();
-            $('.emm').show();
-            $('.email-error').text("邮箱格式错误");
-        }
-        //  account的长度的限制
-        else if (account.length < 6 || account.length > 18) {
-            $('.email-error').show();
-            $('.emm').show();
-            $('.email-error').text("邮箱格式错误");
-            $('#p1-show').hide();
-        }
-        else {
-            $('.email-error').hide();
-            $('.emm').hide();
+            $('#address-01').show();
+
+        } else {
             $('#p1-show').show();
+            $('#address-01').hide();
             check1 = 1;
         }
     });
@@ -73,7 +63,7 @@ $(document).ready(function () {
     });
     //  离开焦点后发生变化  
     //手机号码正则表达式
-    var reg=/^1[3578][01379]\d{8}|1[34578][01256]\d{8}|(134[012345678]\d{7}|1[34578][012356789]\d{8})$/g; 
+    var reg = /^1[3578][01379]\d{8}|1[34578][01256]\d{8}|(134[012345678]\d{7}|1[34578][012356789]\d{8})$/g;
     $('#phone1').blur(function () {
         //   手机号码的要求
         if (!reg.test(phonenumber)) {
@@ -134,20 +124,18 @@ $(document).ready(function () {
             check6 = 1;
         }
     });
-
     //    同意按钮的检验
     $('#s1').click(function () {
         check7 = 1;
     });
-
+    var hoster, password01;
     $('.last').click(function () {
         //  判断是否全部正确
         if (check1 == 1 && check2 == 1 && check3 == 1 && check4 == 1 && check5 == 1 && check6 == 1 && check7 == 1) {
             alert("注册成功！");
             //    获取本地的登陆页面
-            $(location).prop('href', 'Onload.html');
+            $(location).prop('href', 'loading.html');
             //    将值存到缓存区
-            var hoster, password01;
             window.localStorage.setItem("hoster", account);
             window.localStorage.setItem("password01", password001);
             //    清空所有信息

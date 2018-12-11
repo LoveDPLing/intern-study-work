@@ -9,6 +9,10 @@ body{
    padding:0;
 
 }
+a{
+
+   text-decoration: none; 
+}
 /* 网易注册页面的最上面的部分 */
 .header{
 
@@ -79,7 +83,11 @@ body{
 
     height:30px;
 
-    margin-top:18px;
+    top:18px;
+
+    left:60px;
+
+    position: relative;
 
 }
 .header .header-right a{
@@ -89,8 +97,6 @@ body{
     color:#aaa;
 
     height:30px;
-
-    margin-left: 8px;
 
     text-decoration: none;
 
@@ -111,124 +117,132 @@ body{
 
     margin:0 auto;
 
+    position:relative;
 }
 
-.box-top-1 a,.box-top-2 a{
+.main .main-inner .box{
 
-    text-decoration: none;
+    width:450px;
 
-    color:#fff;
+    height:489px;
 
-    line-height:80px;
+    right:16px;
 
-    padding-left:5px;
-
-
-}
-.main .main-inner .box-top-1{
-
-    width:80px;
-
-    height:80px;
- 
-    margin:87px 0px 0px 522px;
- 
-    background-color:rgb(181, 181, 236);
-
-    border-radius:50%;
-
-    font-size:20px;
- 
-    position: absolute;
- 
-    box-shadow: 1px 3px 10px #aaa;
-
-    border-radius:50%;
-
-    font-size: 12px;
-
-    color:rgb(185, 149, 149);
-    
-}
-.main .main-inner .box-top-2{
-
-    width:80px;
-
-    height:80px;
- 
-    margin:87px 0px 0px 840px;
- 
-    background-color:rgb(181, 181, 236);
-
-    border-radius:50%;
-
-    color:#fff;
-
-    font-size:20px;
- 
-    position: absolute;
- 
-    box-shadow: 1px 3px 10px #aaa;
-
-    color:rgb(185, 149, 149);
-
-    font-size: 12px;
-
-}
-.main .main-inner .box-top-1 .box-top-01{
-
-    width:80px;
-
-    height:80px;
-
-}
-.main .main-inner .box-top-2 .box-top-02{
-    width:80px;
-
-    height:80px;
-}
-.box-top-1 a:hover,.box-top-2 a:hover{
-
-    color:blue;
-    
-    border-bottom:1px solid blue;
-    
-}
-.main .main-inner .box-middle{
-
-    width:400px;
-
-    height:400px;
-
-    margin:110px 0px 0px 520px;
+    top:40px;
 
     background-color:#fff;
 
     position: absolute;
 
-    box-shadow: 1px 3px 10px #aaa;
+    box-shadow: 1px 2px 5px #aaa,-2px -2px 5px #aaa ;
 
-    border-radius:50%;
+    z-index:2;
+
+    overflow: hidden;
+
 }
-.main .main-inner .box-middle .address{
+.main .main-inner .box .box-middle-top{
 
-    width: 379px;
+   width:450px;
+
+   height:48px;
+
+   border:1px solid black;
+
+   position: absolute;
+
+}
+.main .main-inner .box .box-top .box-top-01{
+
+    width:224px;
+
+    height:48px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    float: left;
+
+    font-size: 16px;
+
+    text-align: center;
+
+    line-height: 48px;
+
+    color: #626262;
+
+    cursor: pointer;
+
+    font-weight: 100
+
+}
+.main .main-inner .box .box-top .box-top-02{
+
+    width:224px;
+
+    height:48px;
+
+    overflow: hidden;
+
+    position: relative;
+    
+    float: left;
+
+    font-size: 16px;
+
+    text-align: center;
+
+    line-height: 48px;
+
+    color: #626262;
+
+    cursor: pointer;
+
+    font-weight: 100
+
+}
+.main .main-inner .box .box-top a:hover,.main .main-inner .box .box-top a:hover{
+
+    color:blue;
+    
+    border-bottom:1px solid blue;
+    
+} 
+.main .main-inner .box .box-middle{
+
+    position: relative;
+
+    width: 450px;
+
+    height:346px;
+
+    overflow: hidden;
+
+    border-radius: 4px;
+
+    background: #fff;
+
+}
+.main .main-inner .box .box-middle .address{
+
+    width: 330px;
 
     height : 46px;
 
     font-size:16px;
 
-    margin-top:137px;
+    top:30px;
 
-    margin-left: 10px;
+    left: 60px;
 
     color:rgb(146, 144, 144);
 
     background:url(../images/账户.png) no-repeat 0% 50%;
 
-    border:1px solid rgb(156, 156, 228);
+    border:1px solid #aaa;
 
-    border-radius:5%;
+    position: relative;
 
 } 
 
@@ -247,7 +261,7 @@ body{
 }
 .symbol{
 
-    margin:12px 0px 0px 17px;
+    margin:12px 0px 0px 0px;
 
     position: absolute;
 
@@ -256,13 +270,13 @@ body{
 }
 #sel{
 
-    width: 112px;
+    width: 80px;
 
     height : 30px;
 
     border-radius : 10%;
 
-    margin:8px 0px 0px 34px;
+    margin:8px 0px 0px 17px;
 
     position: absolute;
 
@@ -270,25 +284,38 @@ body{
 
     color:rgb(146, 144, 144);
 }
-.main .main-inner .box-middle .password{
+.main .main-inner .box .box-middle .password{
    
-    width: 379px;
+    width: 330px;
 
     height : 46px;
 
     font-size:16px;
 
-    margin-top:30px;
+    top:30px;
 
-    margin-left: 10px;
+    left: 60px;
 
     background:url(../images/密码.png) no-repeat 0% 50%;
 
     color:rgb(146, 144, 144);
 
-    border:1px solid rgb(156, 156, 228);
+    border:1px solid #aaa;
 
-    border-radius:5%;
+    position: relative;
+ 
+} 
+.main .main-inner .box .box-middle .freeload{
+
+    width: 330px;
+
+    height : 28px;
+
+    position: absolute;
+
+    top:166px;
+
+    left:60px;
 }
 .biao2{
 
@@ -298,15 +325,11 @@ body{
 
     margin-left:35px;   
 
-    border-radius : 1%;
+    border-radius : 4px;
 
     border:1px solid #fff;
 }
-.main .main-inner .box-middle .p2{
 
-    margin-left:30px;
-
-}
 label{
 
     color:#aaa;
@@ -314,66 +337,107 @@ label{
     font-size:14px;
 
 }
-.main .main-inner .box-middle .load-01{
+.main .main-inner .box .box-middle .load-01{
 
-    width:80px;
+    width:162px;
 
-    height:80px;
+    height:48px;
 
-    margin-left:5px;
+    position: relative;
 
-    margin-top:51px;
-
-    position: absolute;
-
-    line-height:80px;
+    line-height:48px;
 
     text-align:center;
 
+    bottom:-60px;
+
+    left:60px;
+
     color:#fff;
 
-    background-color:rgb(78, 78, 226);
+    border-radius : 4px;
 
-    border-radius:50%;
+    background-color:#3182D9;
 
 }
-.main .main-inner .box-middle .insert-01{
+.main .main-inner .box .box-middle .insert-01{
 
-    width:80px;
+    width:162px;
     
-    height:80px;
+    height:48px;
 
-    margin:49px 0px 0px 317px;
+    top:12px;
 
-    position: absolute;
+    left:233px;
+
+    position: relative;
 
     text-align:center;
 
-    line-height:80px;
+    line-height:48px;
 
-    background-color:rgb(181, 181, 236);
-
-    border-radius:50%;
+    background-color:#EAF2FB;
 
     color:#fff;
 
-    font-size:20px;
+    border:1px solid#ABCCEF;
     
 }
 .main .main-inner .box-middle .insert-01 a{
 
     text-decoration: none;
 
-    color:#fff;
-
-    font-size:20px;
+    color:blue;
 
 }
-.smile{
+.main .main-inner .box .box-middle img{
 
-    width:400px;
+   bottom:-76px;
 
-    height:146px;
+   left:110px;
+
+   position: relative;
+
+}
+.main .main-inner .box .box-bottom{
+
+    width:450px;
+
+    height:90px;
+
+}
+.main .main-inner .box .box-bottom .box-bottom-01{
+
+    width:450px;
+
+    height:20px;
+
+    font-size:14px;
+
+    left:70px;
+
+    top:25px;
+
+    position: relative;
+
+    color:#aaa;
+
+}
+.main .main-inner .box .box-bottom .box-bottom-02{
+
+    width:450px;
+
+    height:20px;
+
+    font-size:14px;
+
+    left:73px;
+
+    top:30px;
+
+    position: relative;
+
+    color:red;
 
 }
 .main .main-inner .main-bottom{
@@ -382,7 +446,9 @@ label{
 
     height:60px;
 
-    margin:550px 0px 0px 850px;
+    bottom:10px;
+
+    right:10px;
 
     text-align:center;
 
@@ -390,34 +456,48 @@ label{
 
     line-height: 60px;
 
+    float:left;
+
 }
-.main .main-inner .main-bottom #left {
+.main .main-inner .main-bottom .main-bottom-01 {
+
+    width:30px;
+
+    height:30px;
 
     text-decoration: none;
-
-    margin-right:10px;
     
     color: rgb(179, 182, 179);
 
     background-color:rgb(114, 112, 112);
 
-    padding:0px 10px;
-
     border-radius: 50%;
  
     font-size: 20px;
  
     z-index: 2;
+
+    position: relative;
+
+    top:40px;
+
+    left:130px;
+
+    line-height:28px;
+
+    text-align:center;
    
 }
-.main .main-inner .main-bottom #right {
+.main .main-inner .main-bottom .main-bottom-02{
+
+    width:30px;
+
+    height:30px;
 
     text-decoration: none;
 
     color: rgb(179, 182, 179);
  
-    padding:0px 10px;
-
     border-radius: 50%;
 
     font-size: 20px;
@@ -425,7 +505,23 @@ label{
     z-index: 2;
 
     background-color:rgb(114, 112, 112);
- 
+
+    position: relative;
+
+    top:10px;
+
+    left:170px;
+
+    line-height:28px;
+     
+    text-align:center;
+
+}
+.main .main-inner .main-bottom .main-bottom-01 a,.main .main-inner .main-bottom .main-bottom-02 a{
+
+    color:#fff;
+
+    font-size:27px;
 }
 .forget{
 
@@ -433,9 +529,11 @@ label{
 
     font-size:14px;
 
-    margin-left:165px;
+    left:150px;
 
     text-decoration: none;
+
+    position: relative;
 
 }
 /* 网易注册页面的最下面部分 */
