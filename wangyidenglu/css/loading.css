@@ -259,6 +259,10 @@ a{
     border:1px solid #fff;
 
 }
+.main .main-inner .box .box-middle .address:hover,.main .main-inner .box .box-middle .password:hover{
+
+    border:1px solid blue;
+}
 .symbol{
 
     margin:12px 0px 0px 0px;

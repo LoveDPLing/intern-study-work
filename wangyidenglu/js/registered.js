@@ -1,6 +1,6 @@
 
 $(document).ready(function () {
-    var account, password001, password002, phonenumber, code001, code002, check1, check2, check3, check4, check5, check6, check7, check8;
+    var account, password001, password002, phonenumber, code001, code002, check1, check2, check3, check4, check5, check6, check7;
     //   监听邮箱账号变化
     $('#email1').on('input propertychange', function () {
         account = $('#email1').val();
@@ -28,9 +28,10 @@ $(document).ready(function () {
         password001 = $('#password1').val();
     });
     //  离开焦点后发生变化
+         var Regxx = /^\w{6,18}$/;
     $('#password1').blur(function () {
         //    密码长度的限制     
-        if (password001.length < 6 || password001.length > 18) {
+        if (!Regxx.test( password001)) {
             $('#pass1').hide();
             $('#pass1-01').show();
         }
