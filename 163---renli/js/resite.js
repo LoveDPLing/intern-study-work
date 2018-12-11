@@ -7,7 +7,7 @@ $('#e-address').on('input propertychange', function () {
         $('#p1').show();
     }
 });
-var aa = /^[a-zA-Z]/
+var aa = /^[a-zA-Z]/;
 $('#e-address').blur(function () {
     if (!aa.test(c)) {
         $('#p1').hide();
@@ -84,16 +84,16 @@ $('#mobile').blur(function () {
         l = 1;
     }
 });
-$('#code').on('input propertychange',function(){    　　
+$('#code').on('input propertychange', function () {
     $('#p5').css({
-        color:'red'
+        color: 'red'
     });
-   });
-$('#code').blur(function(){
+});
+$('#code').blur(function () {
     $('#p5').css({
-        color:'green'
-   });
-   m=1;
+        color: 'green'
+    });
+    m = 1;
 });
 /*
 var random_code = window.localStorage.getItem("random_code");
@@ -120,7 +120,7 @@ $('#message').on('input propertychange', function () {
 });
 $('#message').blur(function () {
     if (h.length != 4) {
-      
+
         $('#p6-hide').text("手机验证码错误！请重新输入");
         $('#p6-hide').css({
             color: 'red'
@@ -142,6 +142,6 @@ $('.signbtn').click(function () {
         window.localStorage.setItem("user", c);
         window.localStorage.setItem("password", d);
     } else {
-        alert("输入有误！请重新返回填写"); 
+        alert("输入有误！请重新返回填写");
     }
 });
