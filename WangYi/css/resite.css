@@ -76,12 +76,15 @@ body {
     text-indent: 20px;
 }
 .content-main{
-    border-top-width: 0;
-    position: relative;
+    float: left;
+    width: 644px;
+    height: 709px;
 }
 .content .main-left {
     width: 582px;
     float: left;
+    height: -webkit-fill-available;
+    position: relative;
     padding: 50px 0 36px 60px;
     zoom: 1;
 }
@@ -110,7 +113,9 @@ body {
     font-size: 14px;
 }
 .main-left .regForm{
-  margin-left: 9px;   
+  margin-left: 9px;
+  margin-top: 30px;   
+  height: 436px;
 }
 .main-left .regForm .name{
     position: relative;
@@ -170,14 +175,14 @@ select {
 .regForm-item-tit1{
     position: absolute;
     left: 122px;
-    top: 188px;
+    top: 218px;
     text-align: right;
     font-size: 14px;
 }
 .regForm-item-tit2{
     position: absolute;
     left: 98px;
-    top: 260px;
+    top: 285px;
     text-align: right;
     font-size: 14px;
 }
@@ -247,11 +252,14 @@ option {
     top: 20px;
     position: absolute;
 }
-.btn{
+.btns{
+    width: 124px;
+    height: 30px;
     position: absolute;
-    top: 44px;
-    font-size: 15px;
-    color:#fff;
+    clear: both;
+    top: 35px;
+}
+.btn{
     height: 28px;
     padding: 0 20px;
     font-size: 14px;
@@ -266,6 +274,26 @@ option {
 .btn strong:hover,a.btn:active{
     color:#fff;
     background: LightSeaGreen;
+}
+.message{
+    padding: 8px 0 8px 85px;
+    zoom: 1;
+    position: relative;
+    padding-left: 110px;
+    top: 51px;
+}
+.message-input{
+    width: 306px;
+    padding: 4px 5px;
+    border: #ABABAB 1px solid;
+    box-shadow: 2px 2px 3px #EDEDED inset;
+    font-size: 14px;
+    border-radius: 3px;
+}
+.code{
+    margin-left: 9px;   
+    margin-top: 30px;   
+    height: 436px;
 }
 .service{
     top:538px;
@@ -292,20 +320,23 @@ option {
     color: #fff;
 }
 .content .mainBody-side {
+    position: relative;
     width: 315px;
+    height: 709px;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #aaa;
     float: right;
 }
 .mainBody-side .regExt {
-    width: 315px;
-    height: 432px;
     padding: 106px 0 0 45px;
     color: #AFAFAF;
 }
 .footer{
  margin:auto;
-text-align: center;
-clear: both;
-height: 80px;
-line-height: 40px;
-color: #999;
+ text-align: center;
+ clear: both;
+ height: 80px;
+ line-height: 40px;
+ color: #999;
 }

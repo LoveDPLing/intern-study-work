@@ -69,11 +69,14 @@ body {
 .slide{
     position: relative;
     width: 1000px;
+    height: 100%;
     margin: 0 auto; 
 }
 .slide .slide-inner{
    position: relative;
-   margin: 0 auto; 
+   width: 100%;
+   height: 100%;
+   margin: 0 auto;
 }
 .slide .slide-inner li{
     position: absolute;
@@ -89,7 +92,11 @@ body {
 .slide .slide-btn{
     z-index: 2;
     position: absolute;   
-    margin-top: 573px;
+    width: 60px;
+    height: 28px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
 }
 .slide-left{
     float: left;
@@ -106,11 +113,10 @@ body {
     border-radius :50%;
     border: 1px #fff;
     height: 25px;
-    position: absolute
 }
 .login{
     width: 450px;
-    height: 490px;
+    height: 455px;
     top: 30px;
     overflow: hidden;
     margin-top: 80px;
@@ -152,7 +158,7 @@ body {
     background:#fff;
     padding:0;
     border-radius: 8px;
-    min-height: 438px;
+  /*  min-height: 438px;*/
 }
 .login .loginUrs{
     width:450px;
@@ -341,7 +347,7 @@ input::placeholder{ /*WebKit browsers*/
     text-indent: 11px;
 }
 .login-bottom {
-    margin: 59px auto 20px;
+    margin: -10px auto 20px;
 }
 .login-bottom-logo{
     background:url(../img/QQ截图20181206102740.png) 50% no-repeat;

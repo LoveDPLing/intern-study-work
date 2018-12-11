@@ -101,16 +101,14 @@ $('#code').blur(function () {
     var ycode = window.localStorage.getItem("ycode");
     z = $('#code').val();
     if (z != ycode) {
-        $('#P5').hide();
-        $('#p6').text("输入错误，请重新输入!");
-        $('#p6').css({
+       $('#p5-a').text("输入错误，请重新输入!");
+        $('#p5-a').css({
             color: 'red'
         });
     }
     else {
-        $('#P5').hide();
-        $('#p6').text("输入正确，请继续!");
-        $('#p6').css({
+        $('#p5-a').text("输入正确，请继续!");
+        $('#p5-a').css({
             color: 'green'
         });
         m = 1;
@@ -142,16 +140,14 @@ $('#message').blur(function () {
     var number = window.localStorage.getItem("number");
     h = $('#message').val();
     if (h != number) {
-        $('#p6').hide();
-        $('#p6-hide').text("手机验证码错误！请重新输入");
-        $('#p6-hide').css({
+        $('#p6').text("手机验证码错误！请重新输入");
+        $('#p6').css({
             color: 'red'
         });
     }
     else {
-        $('#p6').hide();
-        $('#p6-hide').text("输入正确!请仔细阅读以下文档！");
-        $('#p6-hide').css({
+        $('#p6').text("输入正确!请仔细阅读以下文档！");
+        $('#p6').css({
             color: 'green'
         });
         n = 1;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
     <title>注册网易免费邮箱 - 中国第一大电子邮件服务商</title>
 </head>
+
 <body>
     <!--头部开始-->
     <div class="header">
@@ -90,7 +92,7 @@
                         </div>
                     </div>
                     <!--验证码部分-->
-                    <div id="vcodeDl" class="regForm-item vCodeArea vCodeArea-big">
+                    <div id="vcodeDl" class="regForm-item ">
                         <div class="regForm-item-tit3"><span class="txt-impt">*</span>验证码</div>
                         <div class="regForm-item-ct3">
                             <input id="code" type="text" class="ipt" style="width: 196px; position: absolute;  margin-top: -16px;">
@@ -98,11 +100,8 @@
                                 <canvas class="show-captcha" id="canvas" style="width: 105px;z-index: 2;"></canvas>
                                 <span class="code-refresh" style="z-index:2;">看不清楚,再换一张</span>
                             </a>
-                            <div class="tips" id="p5" style="display:none;">
-                                <span class="txt-tips" style="position: absolute; top: 24px;">请填写图片中的字符，不区分大小写</span>
-                            </div>
-                            <div id="p5-hide" class="tips">
-                                <span class="txt-tips" style="position: absolute; top: 24px;"></span>
+                            <div class="tips" id="p5" style="top: -5px;  width: 215px; position: absolute;">
+                                <span  id="p5-a"class="txt-tips" style="position: absolute; top: 24px;">请填写图片中的字符，不区分大小写</span>
                             </div>
                             <div class="btns">
                                 <a href="javascript:void(0);" class="btn" onclick="MathRand()">
@@ -112,25 +111,23 @@
                         </div>
                     </div>
                     <!--短信验证部分-->
-                    <div id="acodeMainDl" class="regForm-item">
-                        <div class="regForm-item-tit" style="top: 492px; left: 72px;"><span class="txt-impt">*</span>短信验证码</div>
-                        <div class="regForm-item-ct">
-                            <input id="message" name="acode" type="text" class="ipt norWidthIpt" style="width: 306px;top: 66px; position: absolute;">
-                            <div id="p6" class="tips" style=" top:88px;    width: 189px;">
-                                <span class="txt-tips" style="top: 99px; position: absolute;">请查收手机短信，并填写短信中的验证码</span>
-                            </div>
-                            <div id="p6-hide" class="tips" style="top: 100px;  position: absolute;">
-                            </div>
+
+                    <div class="regForm-item-tit" style="top: 502px; left: 72px;"><span class="txt-impt">*</span>短信验证码</div>
+                    <div class="message">
+                        <input id="message" name="acode" type="text" class="message-input" />
+                        <div id="p6" class="tips" style="width: 243px;">
+                            <span class="txt-tips">请查收手机短信，并填写短信中的验证码</span>
                         </div>
                     </div>
+
                     <!--条款部分-->
-                    <div id="mainAcceptDl" class="regForm-item">
-                        <div class="service">
-                            <input id="mainAcceptIpt" type="checkbox" checked="checked"> 同意<a href="http://reg.163.com/agreement.shtml"
-                                target="_blank" tabindex="-1">"服务条款"</a>和<a href="http://reg.163.com/agreement_game.shtml"
-                                target="_blank" tabindex="-1">"隐私权相关政策"</a>
-                        </div>
+                    <div id="mainAcceptDl" class="regForm-item"></div>
+                    <div class="service">
+                        <input id="mainAcceptIpt" type="checkbox" checked="checked"> 同意<a href="http://reg.163.com/agreement.shtml"
+                            target="_blank" tabindex="-1">"服务条款"</a>和<a href="http://reg.163.com/agreement_game.shtml"
+                            target="_blank" tabindex="-1">"隐私权相关政策"</a>
                     </div>
+
                     <!--注册-->
                     <div class="signbtn">
                         <a href="javascript:void(0)" target="_blank" class="btnReg"><strong>立即注册</strong></a>
@@ -138,15 +135,15 @@
                 </div>
             </div>
         </div>
-        <div style="border:1px solid #ccc;float:left;height:707px;"></div>
-        <!--右部图片栏-->
-        <aside class="mainBody-side">
+        <div class="mainBody-side">
             <div class="regExt" id="adds">
                 <img src="http://mimg.127.net/xm/reg_all/img/reg_master.gif" alt="邮箱大师">
             </div>
-        </aside>
-        <!--右部图片栏-->
+        </div>
     </div>
+    <!--右部图片栏-->
+
+    <!--右部图片栏-->
     <!--主体结束-->
     <!--尾部开始-->
     <div class="footer">
@@ -167,4 +164,5 @@
     <script type="text/javascript" src="js/code.js"></script>
     <script type="text/javascript" src="js/resite.js"></script>
 </body>
+
 </html>
