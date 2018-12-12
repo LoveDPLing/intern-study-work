@@ -36,6 +36,9 @@ body{
     margin: 0 auto;
     
 }
+p{
+    display: none;
+}
 .head-r{
     width: 200px;
     height: 19px;

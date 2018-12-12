@@ -21,4 +21,15 @@ window.onload=function(){
         img.src=imgArry[index];
     }
 
+    // var inputemail=document.getElementById("inputemail");
+    // var inputpassword=document.getElementById("inputpassword");
+
+    // var btn1=document.getElementById("btn1");
+    // var btn2=document.getElementById("btn2");
+
+    // btn1.onclick=function(){
+    //     if()
+
+    // }
+
 }
