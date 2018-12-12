@@ -115,7 +115,7 @@ body {
 .main-left .regForm{
   margin-left: 9px;
   margin-top: 30px;   
-  height: 436px;
+  height: 456px;
 }
 .main-left .regForm .name{
     position: relative;
@@ -261,7 +261,6 @@ option {
 }
 .btn{
     height: 28px;
-    padding: 0 20px;
     font-size: 14px;
     background-position: 0 -72px;
     border: #BBB 1px solid;
@@ -296,8 +295,7 @@ option {
     height: 436px;
 }
 .service{
-    top:538px;
-    padding: 8px 0 8px 85px;
+    top:577px;
     zoom: 1;
     position: absolute;
     padding-left: 110px;
