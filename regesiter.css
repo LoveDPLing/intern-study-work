@@ -32,7 +32,8 @@ body{
     height: 27px;
     display: block;
     float: left;
-    margin-left: 10px;
+    /* margin-left: 10px; */
+    margin: 0 auto;
     
 }
 .head-r{
@@ -49,6 +50,7 @@ body{
     height: 747px;
     border: 1px solid grey;
     margin: 0 auto;
+    background-color: white;
 }
 .content-top{
     width: 960px;
@@ -59,13 +61,24 @@ body{
 .mainbody{
     width: 642px;
     height: 707px;
-    border: 1px solid #000;
+    border: 1px solid rgb(128, 128, 128);
+}
+.mainbody-top{
+    width: 100px;
+    height: 30px;
+    /* border: 1px solid #000; */
+    background-color:rgb(0, 47, 255);
+    margin-left: 80px;
+    margin-top: 10px;
+    border-radius: 8px;
+    padding-left: 2px;
 }
 .regTabs{
     width: 582px;
     height: 58px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding-left: 55px;
+    margin-top: 20px;
 }
 .content-right{
     width: 315px;
@@ -74,20 +87,7 @@ body{
     float: right;
     margin-top: -709px;
 }
-ul{
-    width: 412px;
-    height: 35px;
-    border: 1px solid gray;
-}
-ul>li{
-    list-style: none;
-    float: left;
-    width: 137px;
-    height: 35px;
-    /* border: 1px solid gray; */
-    text-align: center;
-    color: #000;
-}
+
 .dl{
     width: 513px;
     height: 69px;
@@ -109,10 +109,10 @@ ul>li{
     height: 20px;
     border: 1px solid #ABABAB;
     padding: 4px 5px;
-    margin-left: 95px;
+    margin-left: 120px;
     margin-top: -25px;
     position: absolute;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 .txt{
     font-size: 14px;
@@ -133,19 +133,180 @@ ul>li{
 .txt-tips{
     font-size: 12px;
     color: #555;
-    margin-left: 90px;
+    margin-left: 100px;
 }
-.dl2{
-    width: 513px;
+.div2{
+    width: 573px;
     height: 69px;
-    border: 1px solid #000;
-    margin: 0 auto; 
+    /* border: 1px solid #000; */
+    margin: 0 auto;
 }
-.input2{
+.div2-small {
+    width: 90px;
+    height: 19px;
+    /* border: 1px solid #000; */
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.input-psw{
+    width: 334px;
+    height: 27px;
+    /* border-radius: 5px; */
+    margin-left: 150px;
+    margin-top: -20px;
     position: absolute;
-    width: 212px;
-    height: 20px;
-    margin-left: 95px;
-    margin-top: -5px;
-    border-radius: 5px;
+}
+.span1{
+    position: absolute;
+    margin-left:150px; 
+    margin-top: 10px;
+}
+.div3{
+    width: 573px;
+    height: 69px;
+    /* border: 1px solid #000; */
+    margin: 0 auto;  
+}
+.div3-small{
+    width: 90px;
+    height: 19px;
+    /* border: 1px solid #000; */
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.repassword {
+    width: 334px;
+    height: 27px;
+    margin-left: 150px;
+    margin-top: -30px;
+    position: absolute;
+}
+.span2{
+    margin-left: 150px;
+    margin-top:30px;
+    color: #555;
+    font-size: 12px;
+}
+.div4{
+    width: 573px;
+    height: 69px;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+}
+.div4-small{
+    width: 90px;
+    height: 19px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.phonenum{
+    width: 334px;
+    height: 27px;
+    margin-left: 150px;
+    margin-top: -30px;
+    position: absolute;
+}
+.span3{
+    margin-left: 150px;
+    margin-top:30px;
+    color: #555;
+    font-size: 12px;
+}
+.div5{
+    width: 573px;
+    height:129px;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+}
+.div5-small{
+    width: 90px;
+    height: 19px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.code{
+    width: 208px;
+    height: 27px;
+    margin-left: 150px;
+    margin-top: -30px;
+    position: absolute;
+}
+.btn{
+   width: 100px;
+   height: 30px; 
+   margin-left: 150px;
+   margin-top: 10px;
+}
+.div6{
+    width: 573px;
+    height: 69px;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+}
+.div6-small{
+    width: 100px;
+    height: 19px;
+    margin-left: 40px;
+    margin-top: -40px;
+}
+.message{
+    width: 334px;
+    height: 27px;
+    margin-left: 150px;
+    margin-top: -30px;
+    position: absolute;
+}
+.span6{
+    color: #555;
+    font-size: 12px;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+.div7{
+    width: 573px;
+    height: 36px;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+}
+.btnregister{
+    width: 100px;
+    height: 35px;
+    color: wheat;
+    background-color: green;
+    margin-left: 180px;
+    margin-top: -38px;
+    position: absolute;
+}
+
+
+
+.div7{
+    width: 573px;
+    height: 36px;
+
+}
+
+
+
+
+.foot{
+    width: 1349px;
+    height: 80px;
+    /* border: 1px solid #000; */
+}
+a{
+    color: grey;
+    font-size: 12px;
+    text-decoration: none;
+}
+.foot-top{
+    margin-left: 300px;
+    margin-top: 15px;
+}
+.footer{
+    color:grey;
+    font-size: 12px;
+    margin-left: 350px;
+    margin-top: -10px;
+    position: absolute;
 }
