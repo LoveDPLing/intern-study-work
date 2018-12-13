@@ -11,14 +11,28 @@ module.exports = function (grunt) {
             //在所有生成的文件上方加上 时间
             banner: '/*! <%= pkg.file %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
         },
-        minjs: {
-            files: [ {
-                expand: true,     // 启用下面的选项
-                cwd: 'src/js/',       // 指定待压缩的文件路径
-                src: [ '**/*.js', '!**/*.min.js' ], // 匹配相对于cwd目录下的所有js文件(排除.min.js文件)
-                dest: 'dist/js',   // 生成的压缩文件存放的路径
-                ext: '.min.js'    // 生成的文件都使用.min.css替换原有扩展名，生成文件存放于dest指定的目录中
-            } ]
+        /*=======  压缩css，cssmin插件的配置信息 =======*/
+        cssmin: {
+            /*压缩 CSS 文件为 .min.css */
+            options: {
+                keepSpecialComments: 0 /* 移除 CSS 文件中的所有注释 */
+            },
+            /*  合并CSS  */
+            merge: {
+                files: {
+                    /* 合并指定目录下   所有的CSS文件 */
+                    'src/css/merge/all/all.css': ['src/css/**/*.css', '!src/css/**/*.min.css'],
+                    /* 合并指定目录下   特定的CSS文件 */
+                    'src/css/merge/some/some.css': ['src/css/bootstrap/*.css', 'src/css/some.css', '!src/css/**/*.min.css']
+                }
+            },
+            minify: {
+                expand: true,                      // 启用下面的选项
+                cwd: 'src/css/',                   // 指定待压缩的文件路径
+                src: ['**/*.css', '!**/*.min.css'],     // 匹配相对于cwd目录下的所有css文件(排除.min.css文件)
+                dest: 'dist/css',               // 生成的压缩文件存放的路径
+                ext: '.min.css'                        // 生成的文件都使用.min.css替换原有扩展名，生成文件存放于dest指定的目录中
+            }
         },
         /*  合并js  */
         merge: {
@@ -138,9 +152,8 @@ usemin : {
         grunt.loadNpmTasks('grunt-usemin');
         grunt.loadNpmTasks('grunt-contrib-connect');
 
-
         //需要执行哪些任务（注意先后顺序）
         grunt.task.run('clean','useminPrepare','cssmin','uglify','copy','usemin','connect','watch');
     });
-    
+
 };
