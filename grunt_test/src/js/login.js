@@ -16,6 +16,7 @@ $(function () {
         $("#main").css("backgroundColor", bac[index]);
         lis.eq(index).show().siblings().hide();
         //给对应下标的小圆点按钮添加current类名,其他兄弟移除current类名
+        
     }
     //2.左边箭头点击事件
     $('#arrow-left').click(function () {

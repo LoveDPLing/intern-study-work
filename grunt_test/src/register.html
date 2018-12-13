@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册网易免费邮箱 - 中国第一大电子邮件服务商</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="css/register.css">
+    <script src="./js/jquery-1.10.2.min.js"></script>
+</head>
+<body style="background-color: #f9f9f9" class="register">
+<header>
+    <div class="header-log">
+        <a href="#"><img src="./image/logo.png" alt=""></a>
+        <a href="#"><img src="./image/logo.png" alt=""></a>
+        <a href="#"><img src="./image/logo.png" alt=""></a>
+        <span>
+                中国第一大电子邮件服务商
+            </span>
+    </div>
+    <div class="links">
+        <a href="#">了解更多</a>|
+        <a href="#">了解更多</a>
+    </div>
+</header>
+<section class="container" style="clear: both">
+    <!--大标题-->
+    <div class="container-h1">
+        <h1 style="color: #FFFFFF;font-size: 14px;line-height: 36px;text-indent: 20px">
+            欢迎注册无限容量的网易邮箱！邮件地址可以登录使用其他网易旗下产品。</h1>
+    </div>
+    <!--表单主体-->
+    <div class="mainbody">
+        <!--小标题-->
+        <div class="regtabs">
+            <h2>注册字母邮箱</h2>
+        </div>
+        <!--表单输入主体-->
+        <div class="regmain">
+            <!--邮箱地址-->
+            <dl class="reg-email">
+                <dt class="regform-tit"><span class="txt-impt">*</span>邮件地址</dt>
+                <dd class="regform-input">
+                    <input type="text" name="email" style="width: 210px;" id="username">@
+                    <select class="regform-sel" name="" id="">
+                        <option value="">163.com</option>
+                        <option value="">126.com</option>
+                        <option value="">yeah.net</option>
+                    </select>
+                    <p id="usernameError">请输入格式正确的邮箱地址</p>
+                    <p id="usernameRight">该邮箱地址可以使用</p>
+                    <div class="tips">
+                            <span>
+                               6~18个字符，可使用字母、数字、下划线，需以字母开头
+                            </span>
+                    </div>
+                </dd>
+            </dl>
+            <!--第一次输入密码-->
+            <dl class="reg-email">
+                <dt class="regform-tit"><span class="txt-impt" style="margin-left: 24px">*</span>密 码</dt>
+                <dd class="regform-input">
+                    <input type="password" name="email" id="userpassword">
+                    <p id="userpasswordError">密码格式错误</p>
+                    <p id="userpasswordRight">该密码可以使用</p>
+                    <div class="tips">
+                            <span>
+                            6~16个字符，区分大小写
+                            </span>
+                    </div>
+                </dd>
+            </dl>
+            <!--确认密码-->
+            <dl class="reg-email">
+                <dt class="regform-tit"><span class="txt-impt">*</span>确认密码</dt>
+                <dd class="regform-input">
+                    <input type="password" name="email" id="userpassword1">
+                    <p id="userpassword1Right">两次输入密码一致</p>
+                    <p id="userpassword1Error">两次输入密码不一致</p>
+                    <div class="tips">
+                            <span>
+                                请再次填写密码
+                            </span>
+                    </div>
+                </dd>
+            </dl>
+            <!--手机号码-->
+            <dl class="reg-email">
+                <dt class="regform-tit"><span class="txt-impt">*</span>手机号码</dt>
+                <dd class="regform-input">
+                    <input type="text" name="email" id="userphone">
+                    <p id="userphoneError">请输入正确的手机号码</p>
+                    <p id="userphoneRight">手机号码格式正确</p>
+                    <div class="tips">
+                            <span>
+                                忘记密码时，可以通过该手机号码快速找回密码
+                            </span>
+                    </div>
+                </dd>
+            </dl>
+            <!--验证码-->
+            <dl class="reg-email">
+                <dt class="regform-tit"><span class="txt-impt">*</span> 验 证 码</dt>
+                <dd class="regform-input" style="margin-left: 26px">
+                    <input type="text" name="email" style="width: 200px;" id="usercode">
+                    <canvas id="mycanvas" width='110' height='40' class="verification">
+                    </canvas>
+                    <div class="tips">
+                        <p id="usercodeRight">验证码输入正确</p>
+                        <p id="usercodeError">验证码输入错误</p>
+                        <p id="usercodeRight-p" style="display: inline">请填写图片中的字符，不区分大小写</p>
+                        <a href="#" class="ver-img" id="ver-img">看不清楚？换张图片</a>
+                    </div>
+                    <a href="#" class="btns" id="usercode-gain">免费获取验证码</a>
+                </dd>
+            </dl>
+            <!--短信验证码-->
+            <dl class="reg-email" style="margin-top: 25px">
+                <dt class="regform-tit" style="margin-left: -14px"><span class="txt-impt">*</span>短信验证码</dt>
+                <dd class="regform-input">
+                    <input type="text" name="email" id="usernote">
+                    <p id="usernoteRight">短信验证码输入正确</p>
+                    <p id="usernoteError">短信验证码输入错误</p>
+                    <div class="tips">
+                            <span>
+                                请查收手机短信，并填写短信中的验证码
+                            </span>
+                    </div>
+                </dd>
+            </dl>
+            <!--接受服务条款-->
+            <dl class="accept">
+                <dd>
+                    <input type="checkbox" id="check">同意
+                    <a href="#">“服务条款”</a>和
+                    <a href="#">“隐私权相关政策”</a>
+                </dd>
+            </dl>
+            <!--立即注册-->
+            <dl class="immediately">
+                <dd><a href="#" id="register-btn">
+                    立即注册
+                </a></dd>
+            </dl>
+        </div>
+    </div>
+    <!--左侧图片-->
+    <div class="regext">
+        <img style="float: right" src="./image/reg_master.gif" alt="">
+    </div>
+</section>
+<!--底部-->
+<footer>
+    <div class="footer-links">
+        <a href="">关于网易</a>
+        <a href="#">关于网易</a>
+        <a href="#">关于网易</a>
+        <a href="#">关于网易</a>
+        <a href="#">关于网易</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;网易公司版权所有&nbsp;©&nbsp;1997-
+        <br>
+        数据来源：艾媒咨询《2015-2018中国个人邮箱行业研究报告》
+    </div>
+</footer>
+<script src="js/register.js"></script>
+</body>
+</html>
