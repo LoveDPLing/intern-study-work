@@ -1,0 +1,31 @@
+{
+  "name": "wangyi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "gulp project",
+    "start": "gulp default"
+  },
+  "author": "Martha Ren",
+  "license": "ISC",
+  "devDependencies": {
+    "concat": "^1.0.3",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1",
+    "jshint": "^2.9.7",
+    "uglify": "^0.1.5"
+  },
+  "dependencies": {
+    "gulp-clean-css": "^4.0.0",
+    "gulp-rename": "^1.4.0"
+  }
+}

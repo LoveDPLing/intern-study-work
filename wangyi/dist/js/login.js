@@ -1,0 +1,1 @@
+var x,y;$("#user").on("input propertychange",function(){x=$("#user").val()}),$("#password").on("input propertychange",function(){y=$("#password").val()});var user=window.localStorage.getItem("user"),password=window.localStorage.getItem("password");$(".login-in").click(function(){x==user&&y==password?$(location).prop("href","**.html"):alert("登录失败！请确认您的账户和密码是否有误")});
