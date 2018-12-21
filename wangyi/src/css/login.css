@@ -1,4 +1,4 @@
-body {
+.public-body {
     background: #fff;
     font-size: 12px;
     line-height: 1.66;
@@ -6,7 +6,7 @@ body {
     widows: 100%;
     margin: 0 auto;
 }
-.header{
+.leader{
     margin:0 auto;
     position: relative;
     width: 1000px;
@@ -15,7 +15,7 @@ body {
     z-index: 1;
     overflow: hidden;
 }
-.header-logo{
+.leader-logo{
     position: absolute;
     font-size: 2em;
     margin-block-start: 0.67em;
@@ -24,14 +24,14 @@ body {
     margin-inline-end: 0px;
     font-weight: bold;
 }
-.header-logo .logo{   
+.leader-logo .logo{   
     display: inline-block;
     width: 136px;
     height: 32px;
     background: url(https://mimg.127.net/index/163/scripts/2017/pc//img/163logo@2x.png) 100% no-repeat;
     background-size: 100% 100%;
 }
-.header-logo .header-title{
+.leader-logo .leader-title{
     font-size: 16px;
     height: 28px;
     line-height: 28px;
@@ -44,18 +44,18 @@ body {
     color: #777;
 }
 /*****头部导航*****/
-.header-nav{
+.leader-nav{
     position: absolute;
     top: 21px;
     right:16px;
     text-align:right;
 }
-.header-nav a {
+.leader-nav a {
     display: block;
     padding-left: 13px;
     display: inline-block;
 }
-.header-nav a:hover{
+.leader-nav a:hover{
     color:  #ff6700;
 }
 /****主体***/
@@ -68,8 +68,8 @@ body {
 /****轮播图****/
 .slide{
     position: relative;
-    width: 1000px;
     height: 100%;
+    width: 1000px;
     margin: 0 auto; 
 }
 .slide .slide-inner{
@@ -218,7 +218,7 @@ body {
     line-height: 42px;
     padding-left: 8px;
 }
-input {
+.login  input {
     width: 225px;
     height: 42px;
     padding-left: 0;
@@ -227,7 +227,7 @@ input {
     font-size: 16px;
     line-height: 42px;
 }
-input::placeholder{ /*WebKit browsers*/
+.login  input::placeholder{ /*WebKit browsers*/
     color: #aaa; 
     font-style: thin;   
 }

@@ -1,3 +1,6 @@
+import $ from 'jquery';
+window.$ = $;
+window.jQuery = $;
 var c, d, e, f, h, z;
 var i, j, k, l, m, n;
 $('#user').on('input propertychange', function () {

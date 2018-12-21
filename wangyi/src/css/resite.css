@@ -133,11 +133,11 @@ body {
 .main-left .regForm-item-tit .txt-impt {
     margin-right: 4px;
 }
-.txt-impt {
+.main-left .regForm-item-tit.txt-impt {
     margin-right: 4px;
     color: #C00;
 }
-.regForm-item-ct {
+.main-left .regForm-item-ct {
     padding: 8px 0 8px 85px;
     zoom: 1;
     position: relative;
@@ -157,7 +157,7 @@ body {
     font-size: 14px;
     border-radius: 3px;
 }
-select {
+.regForm-item-ct select {
     padding: 3px;
     font-size: 14px;
     font-weight: bold;
@@ -194,7 +194,7 @@ select {
     text-align: right;
     font-size: 14px;
 }
-option {
+.regForm-item-ct option {
     font-weight: normal;
     display: block;
     white-space: pre;
@@ -252,14 +252,14 @@ option {
     top: 20px;
     position: absolute;
 }
-.btns{
+.regForm-item-ct3 .btns{
     width: 124px;
     height: 30px;
     position: absolute;
     clear: both;
     top: 35px;
 }
-.btn{
+.regForm-item-ct3 .btn{
     height: 28px;
     font-size: 14px;
     background-position: 0 -72px;
@@ -330,7 +330,7 @@ option {
     padding: 106px 0 0 45px;
     color: #AFAFAF;
 }
-.footer{
+.foot{
  margin:auto;
  text-align: center;
  clear: both;

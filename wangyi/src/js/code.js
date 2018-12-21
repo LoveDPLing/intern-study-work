@@ -1,3 +1,6 @@
+import $ from 'jquery';
+window.$ = $;
+window.jQuery = $;
 jQuery(function ($) {
     /**生成一个随机数**/
     function randomNum(min, max) {

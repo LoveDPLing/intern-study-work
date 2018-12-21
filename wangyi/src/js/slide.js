@@ -1,3 +1,6 @@
+import $ from 'jquery';
+window.$ = $;
+window.jQuery = $;
 $(function(){
     var bac=["rgb(234, 233, 233)","rgb(241, 242, 246)","rgb(254, 238, 228)"];
     var index=0;   

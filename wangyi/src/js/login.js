@@ -2,6 +2,9 @@
  wrap.onclick=function(){
      return false;
  }*/
+ import $ from 'jquery';
+window.$ = $;
+window.jQuery = $;
 var x, y;
 $('#user').on('input propertychange', function () {
     x = $('#user').val();
