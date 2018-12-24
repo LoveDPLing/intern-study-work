@@ -1,0 +1,4 @@
+/node_modules
+.idea
+package-lock.json
+grunt_test/node_modules/
