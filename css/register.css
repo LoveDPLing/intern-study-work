@@ -1,0 +1,187 @@
+.register header  {
+    width: 960px;
+    height: 80px;
+    margin: 0 auto;
+    position: relative;
+}
+.register header .header-log {
+    position: absolute;
+    left: 0;
+    top: 30px;
+}
+header .header-log>a{
+    width: 130px;
+    height: 25px;
+    display: block;
+    float: left;
+}
+header .header-log img {
+    width: 130px;
+    height: 25px;
+}
+header .header-log span {
+    width: 130px;
+    height: 25px;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 5px;
+    border-left: 1px solid #666666;
+    padding-left: 5px;
+}
+.register header .links {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 200px;
+}
+header .links a {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #3182d9;
+}
+/*表单主体*/
+.register .container {
+    width: 960px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    height: 730px;
+}
+.register .container .container-h1 {
+   height: 36px;
+    background-color: #6495C6;
+    border-radius: 3px;
+}
+.register .container .mainbody {
+    width: 580px;
+    height: 620px;
+    padding: 50px 0 0 60px;
+    float: left;
+}
+.mainbody .regmain dl {
+    display: block;
+    clear: both;
+    width: 510px;
+    height: 70px;
+
+}
+.container .mainbody .regtabs {
+    padding-left: 55px;
+    height: 40px;
+    width: 150px;
+    background-color:rgb(0, 238, 255);
+    line-height: 40px;
+    color: #FFFFFF;
+    border-radius: 5px 5px 5px 5px ;
+    margin-bottom: 30px;
+}
+.regtabs .reg-email .txt-impt {
+    font-size: 18px;
+    color: #c00;
+    display: block;
+    margin-right: 5px;
+    margin-top: 3px;
+    float: left;
+}
+.reg-email .regform-input input {
+    padding: 4px 5px;
+    border-radius: 5px;
+    width: 320px;
+    border: 1px solid #ababab;
+}
+
+.container .mainbody .regmain {
+    padding-left: 9px;
+    position: relative;
+}
+.mainbody .reg-email .regform-tit {
+    font-size: 14px;
+    text-align: right;
+    float: left;
+    margin-top: 5px;
+}
+.mainbody .reg-email .regform-input {
+    float: left;
+    margin-left: 20px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+.reg-email .regform-input .regform-sel {
+    padding: 3px;
+    margin-left: 5px;
+    font-size: 14px;
+
+}
+.reg-email .regform-input .tips {
+    padding: 5px 0 5px;
+}
+.container .regext {
+    padding: 110px 0 0 50px;
+    margin-right: 60px;
+}
+.regform-input .verification {
+    background-color: #3182d9;
+    float: right;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+.regform-input .tips  .ver-img {
+    display: block;
+    margin-left: 10px;
+    float: right;
+    margin-top: 10px;
+}
+.reg-email .regform-input .btns {
+    display: block;
+    height: 30px;
+    width: 150px;
+    background-color: #E4E4E4;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    color: #000;
+}
+.mainbody .regmain .accept {
+    margin-left: 90px;
+    height: 20px;
+}
+.regmain .accept a {
+    color: #039;
+}
+.mainbody .regmain .immediately a {
+    display: block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: forestgreen;
+    color: #FFFFFF;
+    margin-left: 90px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+/*底部*/
+.register footer {
+    height: 80px;
+}
+.register footer .footer-links {
+    width: 960px;
+    height: 80px;
+    margin: 0 auto;
+    text-align: center;
+}
+footer .footer-links a {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+/*表单验证的样式*/
+#usercodeError, #usernameError, #userpasswordError, #userpassword1Error, #userphoneError, #usernoteError {
+    display: none;
+    color: red;
+}
+
+#usercodeRight, #usernameRight, #userpasswordRight, #userpassword1Right, #usernoteRight, #userphoneRight {
+    display: none;
+    color: #3182d9;
+}
