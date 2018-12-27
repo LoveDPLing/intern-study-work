@@ -1,0 +1,186 @@
+.enter {
+    padding-top: 10px;
+}
+/* toubu */
+.enter header {
+    width: 1000px;
+    height: 65px;
+    margin: 0 auto;
+    position: relative;
+}
+.enter header .logo {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+header .logo img {
+    width: 130px;
+    height: 30px;
+    border-right: 1px solid #ccc;
+}
+.enter header .header-title {
+    display: block;
+    width: 160px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    position: absolute;
+    left: 170px;
+    top: 15px;
+}
+.enter header .nav {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+header .nav a {
+    display: inline-block;
+    padding-left: 12px;
+}
+/* 中间部分 */
+.enter .main {
+    background-color: rgb(254, 238, 228);
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.enter .main .container {
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+}
+.main .container .slider {
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;    
+    position: relative;
+}
+.slider ul li {
+    /* 三张图片都加上绝对定位，只显示最后一张图片 */
+    position: absolute;
+}
+.container .slider .arrow {
+    position: absolute;
+    right: 30px;
+    bottom: 15px;
+}
+.slider .arrow span {
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+ /* 登陆表单 */
+ .main .container .login {
+    width: 450px;
+    height: 500px;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 10;
+    top: 30px;
+    right: 15px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+.container .login .login-form {
+    width: 330px;
+    height: 250px;
+    margin: 50px 0 0 50px;
+}
+.container .login .form-title {
+    margin: 35px 0 0 50px;
+}
+.login-form .userform .input-username {
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+.login-form .userform .input-password {
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+/* 邮箱地址输入框 */
+.login-form .userform .u-logo {
+    float: left;
+    width: 20px;
+    height: 25px;
+    text-align: center;
+    padding: 0 5px 0 10px;
+    margin-top: 10px;
+}
+.login-form .u-logo .logo-img {
+    width: 20px;
+    height: 24px;
+    display: block;
+    background: url("../image/spirit.png") no-repeat -251px -86px;
+}
+.userform .u-input {
+    float: left;
+}
+.u-input .u-email {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 8px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+}
+/* @163.com显示在账号输入框的右侧 */
+.userform .input-username span {
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    float: right;
+    display: block;
+    margin-right: 10px;
+}
+.login-form .userform .unlogin {
+    padding: 5px 0 50px 0;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    position: relative;
+}
+.userform .unlogin a {
+    margin-top: 5px;
+    color: cornflowerblue;
+}
+.enroll, .loginbox {
+    width: 155px;
+    height: 45px;
+    font-size: 18px;
+    line-height: 45px;
+    position: absolute;
+    top: 50px;
+    left: 170px;
+    border: 1px solid #abccef;
+    text-align: center;
+    background: #eaf2f8;
+}
+.userform .unlogin .loginbox {
+    top: 50px;
+    left: 2px;
+    color: #FFFFFF;
+    background: #3182d9;
+}
+.main .container .mailapp {
+    text-align: center;
+}
+.container .mailapp p {
+    color: #cb4444;
+    font-size: 16px;
+}
+/* 底部样式 */
+.enter footer .footer-log {
+    float: left;
+}
+.enter footer .footer-nav {
+    float: left;
+    margin-left: 200px;
+}
+footer .footer-nav a {
+    margin-left: 15px;
+}
