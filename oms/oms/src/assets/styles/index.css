@@ -1,0 +1,109 @@
+.index .main .left {
+  position: absolute;
+  height: 100%;
+  float: left;
+  width: 256px;
+  box-shadow: 2px 0 6px rgba(0, 21, 41, 0.35);
+  background: #2e3254;
+  box-sizing: border-box; }
+  .index .main .left .left-h2 {
+    background: #528dff;
+    line-height: 64px;
+    vertical-align: middle;
+    font-size: 20px;
+    font-family: Avenir,Helvetica Neue,Arial,Helvetica,sans-serif;
+    font-weight: 600; }
+    .index .main .left .left-h2 h2 {
+      text-align: center;
+      color: white; }
+  .index .main .left .list_dl .list_dt {
+    color: white;
+    padding: 10px 40px 0 40px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid #464646; }
+    .index .main .left .list_dl .list_dt:hover {
+      background: #222; }
+    .index .main .left .list_dl .list_dt:hover ._after {
+      display: block;
+      width: 5px;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: #4285F4; }
+    .index .main .left .list_dl .list_dt .list_dt_icon {
+      position: absolute;
+      right: 30px;
+      top: 25px;
+      display: block;
+      width: 16px;
+      height: 16px;
+      background: url("../images/off.png") no-repeat; }
+  .index .main .left .list_dl .list_dd {
+    display: none; }
+    .index .main .left .list_dl .list_dd .list_li {
+      list-style-type: none;
+      color: white;
+      padding: 10px 40px 0 65px;
+      height: 30px;
+      line-height: 30px;
+      cursor: pointer;
+      border-bottom: 1px solid #6b6b6b; }
+      .index .main .left .list_dl .list_dd .list_li:hover {
+        background: #4285F4; }
+  .index .main .left .list_dl .selected {
+    background: #4285F4; }
+  .index .main .left #open {
+    background: #222; }
+  .index .main .left #open ._after {
+    display: block;
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #4285F4; }
+  .index .main .left #open .list_dt_icon {
+    background: url("../images/open.png") no-repeat; }
+.index .right {
+  overflow: hidden;
+  margin-left: 256px; }
+  .index .right .tablan {
+    height: 64px;
+    padding: 0;
+    box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+    background-color: pink; }
+    .index .right .tablan .shrink {
+      font-size: 20px;
+      height: 64px;
+      line-height: 64px;
+      cursor: pointer;
+      padding: 0 24px;
+      background-color: aqua;
+      float: left; }
+.index .right .tablan  .animatedSearch {
+      position: relative;
+      width: 50px;
+      border: 1px solid #ccc;
+      font-size: 12px;
+      border-radius: 5px;
+      padding: 5px 8px;
+      color: #333;
+      transition: width 0.4s ease-in-out;
+    }
+.index .right .tablan .animatedSearch:focus {
+  width: 30%;
+}
+    .index .right .tablan .tabspan {
+      float: left; }
+      .index .right .tablan .tabspan span {
+        height: 64px;
+        line-height: 80px;
+        margin-left: 15px;
+        background-color: crimson; }
+
+/*# sourceMappingURL=index.css.map */
