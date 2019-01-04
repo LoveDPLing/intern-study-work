@@ -37,11 +37,10 @@
 
 <body style="overflow-x:hidden;">
     <div class="btn-div">
-        <button type="button" class="btn btn-primary">预检</button>
-        <button type="button" class="btn btn-primary">取消</button>
-        <button type="button" class="btn btn-primary">出库</button>
-        <button type="button" class="btn btn-primary">退货</button>
-        <button type="button" class="btn btn-primary">换货</button>
+        <button type="button" class="btn btn-primary">创建退货单</button>
+        <button type="button" class="btn btn-primary">换货发货</button>
+        <button type="button" class="btn btn-primary">审核</button>
+        <button type="button" class="btn btn-primary">取消退货</button>
         <button type="button" class="btn btn-primary">查看订单</button>
     </div>
     <div>
@@ -50,17 +49,14 @@
                 <tr>
                     <th>序号</th>
                     <th>批量</th>
+                    <th>退货单号</th>
+                    <th>退货/换货</th>
+                    <th>退货状态</th>
                     <th>订单号</th>
-                    <th>订单状态</th>
-                    <th>订单来源</th>
-                    <th>支付方式</th>
-                    <th>订单总价</th>
-                    <th>发送仓库</th>
-                    <th>物流公司</th>
-                    <th>物流单号</th>
-                    <th>收货人</th>
-                    <th>收货地址</th>
-                    <th>操作</th>
+                    <th>退货金额</th>
+                    <th>创建时间</th>
+                    <th>修改时间</th>
+                    <th>修改人</th>
                 </tr>
             </thead>
             <tbody>
@@ -75,12 +71,6 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#demoModal">操作</button>
-                        <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#demoModal">操作</button>
-                    </td>
                 </tr>
                 <tr>
                     <td>2</td>
@@ -93,12 +83,6 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <button type="button" class="btn btn-default btn-xs">操作</button>
-                        <button type="button" class="btn btn-danger btn-xs">操作</button>
-                    </td>
                 </tr>
                 <tr>
                     <td>3</td>
@@ -111,12 +95,6 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <button type="button" class="btn btn-default btn-xs">操作</button>
-                        <button type="button" class="btn btn-danger btn-xs">操作</button>
-                    </td>
                 </tr>
                 <tr>
                     <td>4</td>
@@ -129,12 +107,6 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <button type="button" class="btn btn-default btn-xs">操作</button>
-                        <button type="button" class="btn btn-danger btn-xs">操作</button>
-                    </td>
                 </tr>
                 <tr>
                     <td>5</td>
@@ -147,12 +119,6 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <button type="button" class="btn btn-default btn-xs">操作</button>
-                        <button type="button" class="btn btn-danger btn-xs">操作</button>
-                    </td>
                 </tr>
                 <tr>
                     <td>6</td>
@@ -165,12 +131,6 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <button type="button" class="btn btn-default btn-xs">操作</button>
-                        <button type="button" class="btn btn-danger btn-xs">操作</button>
-                    </td>
                 </tr>
                 <tr>
                     <td>7</td>
@@ -183,12 +143,6 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <button type="button" class="btn btn-default btn-xs">操作</button>
-                        <button type="button" class="btn btn-danger btn-xs">操作</button>
-                    </td>
                 </tr>
                 <tr>
                     <td>8</td>
@@ -201,12 +155,30 @@
                     <td></td>
                     <td></td>
                     <td></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td><input type="checkbox" name="" id=""></td>
                     <td></td>
                     <td></td>
-                    <td>
-                        <button type="button" class="btn btn-default btn-xs">操作</button>
-                        <button type="button" class="btn btn-danger btn-xs">操作</button>
-                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td><input type="checkbox" name="" id=""></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
             </tbody>
         </table>

@@ -11,7 +11,7 @@
     <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
         .table-box {
-            border: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
         }
         .table tbody tr td{
             height: 30px;
@@ -32,17 +32,37 @@
         .table tbody tr:hover {
             background-color: #e6f7ff;
         }
+        /* 自定义checkbox样式 */
+        #checkOne + label::before {
+            content: "\a0";  /*不换行空格*/
+            display: inline-block;
+            vertical-align: .2em;
+            width: 1em;
+            height: 1em;
+            border-radius: .2em;
+            background-color: silver;
+            text-indent: .15em;
+            line-height: .65;  
+        }
+        #checkOne:checked + label::before {
+            content: "\2713";
+            background-color: #528dff;
+            color: #fff;
+        }
+        #checkOne {
+            position: absolute;
+            clip: rect(0, 0, 0, 0);
+        }
+        /* end-- */
     </style>
 </head>
 
 <body style="overflow-x:hidden;">
     <div class="btn-div">
-        <button type="button" class="btn btn-primary">预检</button>
+        <button type="button" class="btn btn-primary">处理异常</button>
         <button type="button" class="btn btn-primary">取消</button>
-        <button type="button" class="btn btn-primary">出库</button>
-        <button type="button" class="btn btn-primary">退货</button>
-        <button type="button" class="btn btn-primary">换货</button>
         <button type="button" class="btn btn-primary">查看订单</button>
+
     </div>
     <div>
         <table class="table table-condensed">
@@ -53,34 +73,30 @@
                     <th>订单号</th>
                     <th>订单状态</th>
                     <th>订单来源</th>
-                    <th>支付方式</th>
-                    <th>订单总价</th>
-                    <th>发送仓库</th>
-                    <th>物流公司</th>
-                    <th>物流单号</th>
-                    <th>收货人</th>
-                    <th>收货地址</th>
-                    <th>操作</th>
+                    <th>异常类型</th>
+                    <th>异常原因</th>
+                    <th>异常状态</th>
+                    <th>创建时间</th>
+                    <th>修改时间</th>
+                    <th>修改人</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>1</td>
-                    <td><input type="checkbox" name="" id=""></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
                     <td>
-                        <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#demoModal">操作</button>
-                        <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#demoModal">操作</button>
+                        <input type="checkbox" name="" id="checkOne">
+                        <label for="checkOne"></label>
                     </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>2</td>
@@ -94,11 +110,6 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td>
-                        <button type="button" class="btn btn-default btn-xs">操作</button>
-                        <button type="button" class="btn btn-danger btn-xs">操作</button>
-                    </td>
                 </tr>
                 <tr>
                     <td>3</td>
@@ -112,11 +123,6 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td>
-                        <button type="button" class="btn btn-default btn-xs">操作</button>
-                        <button type="button" class="btn btn-danger btn-xs">操作</button>
-                    </td>
                 </tr>
                 <tr>
                     <td>4</td>
@@ -130,11 +136,6 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td>
-                        <button type="button" class="btn btn-default btn-xs">操作</button>
-                        <button type="button" class="btn btn-danger btn-xs">操作</button>
-                    </td>
                 </tr>
                 <tr>
                     <td>5</td>
@@ -148,11 +149,6 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td>
-                        <button type="button" class="btn btn-default btn-xs">操作</button>
-                        <button type="button" class="btn btn-danger btn-xs">操作</button>
-                    </td>
                 </tr>
                 <tr>
                     <td>6</td>
@@ -166,11 +162,6 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td>
-                        <button type="button" class="btn btn-default btn-xs">操作</button>
-                        <button type="button" class="btn btn-danger btn-xs">操作</button>
-                    </td>
                 </tr>
                 <tr>
                     <td>7</td>
@@ -184,11 +175,6 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td>
-                        <button type="button" class="btn btn-default btn-xs">操作</button>
-                        <button type="button" class="btn btn-danger btn-xs">操作</button>
-                    </td>
                 </tr>
                 <tr>
                     <td>8</td>
@@ -202,11 +188,6 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td>
-                        <button type="button" class="btn btn-default btn-xs">操作</button>
-                        <button type="button" class="btn btn-danger btn-xs">操作</button>
-                    </td>
                 </tr>
             </tbody>
         </table>
@@ -229,7 +210,10 @@
     </div>
 </body>
 <script>
-
+    $('.table tbody tr td input').click(function(){
+        
+        $(this).addClass('checkbox-style');
+    })
 </script>
 
 </html>
