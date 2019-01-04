@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="chart.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script src="echarts.common.min.js"></script>
+    <script src="https://cdn.bootcss.com/echarts/4.2.0-rc.2/echarts-en.common.min.js"></script>
+    <script src="chart.js"></script>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+        // 指定图表的配置项和数据
+        var option = {
+            title: {
+                text: 'oms  后台首页表格'
+            },
+            tooltip: {},
+            legend: {
+                data: ['销量']
+            },
+            xAxis: {
+                data: ["衬衫", "羊毛衫", "雪纺衫", "裤子", "高跟鞋", "袜子"]
+            },
+            yAxis: {},
+            series: [{
+                name: '销量',
+                type: 'bar',
+                data: [5, 20, 36, 10, 10, 20]
+            }]
+        };
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+        var source   = $("#entry-template").html();
+        var template = Handlebars.compile(source);
+        var context = { title: "My New Post", body: "This is my first post!" }
+        var html = template(context);
+    </script>
+    <style>
+        body {
+            background: yellowgreen;
+            /* -webkit-tap-highlight-color: rgba(0, 0, 0, 0); */
+        }
+        .chart-list {
+            width: 1226px;
+            height: 200px;
+            margin: 0 auto;
+            /* padding: 0 10px; */
+            margin-bottom: 20px;
+        }
+        .chart-list .chart-list-first,
+        .chart-list-second,
+        .chart-list-third,
+        .chart-list-fourth {
+            width: 243.25px;
+            height: 182px;
+            line-height: 1;
+            background-color: #fff;
+            border: 1px solid #fff;
+            opacity: 0.5;
+            float: left;
+            margin-right: 40px;
+            transition: all .8s linear;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="main" style="width: 600px;height:400px;"></div>
+<script type="text/javascript">
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('main'));
+
+    // 指定图表的配置项和数据
+    var option = {
+        toolbox: {
+            show: true,
+            feature: {
+                mark: { show: true },
+                dataView: { show: true, readOnly: false },
+                magicType: { show: true, type: ['line', 'bar'] },
+                restore: { show: true },
+                saveAsImage: { show: true }
+            }
+        },
+        title: {
+            text: 'oms  后台首页表格'
+        },
+        tooltip: {},
+        legend: {
+            data: ['销量']
+        },
+        xAxis: {
+            data: ["衬衫", "羊毛衫", "雪纺衫", "裤子", "高跟鞋", "袜子"]
+        },
+        yAxis: {},
+        series: [{
+            name: '销量',
+            type: 'bar',
+            data: [5, 20, 36, 10, 10, 20]
+        }]
+    };
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+</script>
+<div class="chart-list">
+    <div class="chart-list-first">
+        <span>总销售额</span>
+        <h2>¥ 126，560</h2>
+        <p>周同比 12%</p>
+        <p>日同比 11%</p>
+        <hr />
+        <p>日销售额 ¥12,423</p>
+    </div>
+    <div class="chart-list-second">
+        <span>访问量</span>
+        <h2>8,846</h2>
+        <p>1</p>
+        <p>2</p>
+        <hr />
+        <p>日访问量 1,234</p>
+    </div>
+    <div class="chart-list-third">3</div>
+    <div class="chart-list-fourth">4</div>
+</div>
+<!--<script id="entry-template" type="text/x-handlebars-template">-->
+    <!--<div class="entry">-->
+        <!--<h1>{{context.title}}</h1>-->
+        <!--<div class="body">-->
+            <!--{{body}}</div>-->
+<!--</script>-->
+<!--<div id="entry">{{context.title}}</div>-->
+<body>
+</html>
