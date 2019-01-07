@@ -247,15 +247,13 @@ a{
 }
 #sel{
 
-    width: 80px;
+    width: 100px;
 
     height : 30px;
 
     border-radius : 10%;
 
-    margin:8px 0px 0px 17px;
-
-    position: absolute;
+    position: relative;
 
     border:1px solid #fff;
 
@@ -372,10 +370,13 @@ label{
 
 }
 .main .main-inner .box .box-middle img{
+   width:330px;
 
-   bottom:-76px;
+   height:60px;
 
-   left:110px;
+   top:50px;
+
+   left:55px;
 
    position: relative;
 
