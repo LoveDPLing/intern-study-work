@@ -1,0 +1,341 @@
+body{
+    background:url(../images/img1.jpg);
+
+    background-size:100%;
+}
+a{
+    text-decoration: none;
+}
+/* 主体下的所有div */
+.main{
+
+    width:400px;
+
+    height: 480px;
+
+    background-color:#fff;
+
+    margin: 0 auto;
+
+    position:relative;
+
+    top:115px;
+
+    box-shadow: 1px 2px 5px #aaa,-2px -2px 5px #aaa ;
+
+}
+/* 主体下的左半部分 */
+.main .top{
+
+    width:100%;
+
+    height:50px;
+
+    border-bottom:1px solid rgb(229, 229, 236);
+
+    margin: 0 auto;
+
+    line-height:50px;
+
+}
+.main .top a{
+
+    float:left;
+
+    font-size:15px;
+
+    margin-left:87px;
+}
+.main .top .quickly{
+
+    width:100px;
+
+    height:48px;
+
+    border-bottom:2px solid black;
+
+    text-align:center;
+}
+.main .error{
+
+    width:300px;
+
+    height:30px;
+
+    border:1px solid black;
+
+    margin: 0 auto;
+
+}
+.main .address{
+
+    font-size:15px;
+
+    position: relative;
+
+    left:74px;
+
+    top:30px;
+}
+ .main .biao1:hover, .main .biao2:hover,.main .biao3:hover{
+
+    border: 1px solid #D2E9FF;
+
+}
+
+/* 邮箱错误提示框 */
+ .main .email-error{
+
+    width:300px;
+
+    height:30px;
+
+    margin-left:185px;
+
+    color:red;
+
+    display:none;
+
+    text-align:center;
+
+    line-height:30px;
+
+    background-color:rgb(229, 229, 236);
+
+    font-size:8px;
+
+}
+ .main .p1{
+
+     position:relative;
+
+     font-size:8px;
+
+     color:#aaa;
+
+     left:137px;
+
+     top:30px;
+
+     padding:3px 0px;
+
+}
+ .main  .p1:hover,.content .main .p-1:hover{
+
+     color:black;
+
+}
+ .main .password{
+
+     font-size:15px;
+
+     position: relative;
+
+     left:89px;
+
+     top:30px;
+
+}
+.main .biao1{
+
+    width: 200px;
+
+    height : 30px;
+
+    border-radius : 7px;
+
+    border:1px solid #aaa;
+
+    margin-left:8px;
+
+}
+ .main  .biao2{
+
+    width: 200px;
+
+    height : 27px;
+
+    border-radius : 7px;
+
+    border:1px solid #aaa;
+
+     margin-left:8px;
+
+}
+.main .biao3{
+
+    width: 80px;
+
+    height : 30px;
+
+    border-radius : 7px;
+
+    border:1px solid #aaa;
+
+    margin-left:8px;
+
+}
+.main  .p1-01{
+
+    font-size:8px;
+
+    color:red;
+
+    display:none;
+
+    position:relative;
+
+    top:30px;
+
+    left:137px;
+
+    padding:3px 0px;
+
+}
+ .main  .confirm-password{
+
+     position: relative;
+
+     top:30px;
+
+     font-size:15px;
+
+     text-align: center;
+}
+.main  .telephone{
+
+    position: relative;
+
+    top:30px;
+
+    font-size:15px;
+
+    text-align: center;
+
+}
+input::-webkit-input-placeholder{
+
+    color:black;
+
+}
+ .main .code{
+
+     font-size:15px;
+
+     text-align: center;
+
+     position: relative;
+
+     left:42px;
+
+     top:30px;
+
+}
+.main .p2{
+
+    position: relative;
+
+    left:110px;
+
+    top:60px;
+
+}
+ .main  .p-1{
+     position:relative;
+
+     font-size:8px;
+
+     color:#aaa;
+
+     top:45px;
+
+     left:137px;
+}
+ .main  .p-1-01{
+
+     position:relative;
+
+     font-size:8px;
+
+     top:45px;
+
+     left:137px;
+
+     color:red;
+
+     display: none;
+}
+
+.main .agree{
+
+    font-size:8px;
+
+    position:relative;
+
+    left:113px;
+
+    top:60px;
+}
+ .main .last{
+
+    width : 119px;
+
+    height : 37px;
+
+    background-color:#1890FF;
+
+    text-align : center;
+
+    line-height : 37px;
+
+    font-size : 15px;
+
+    color : #fff;
+
+    border-radius:5%;
+
+    position: relative;
+
+    left:140px;
+
+     bottom:-80px;
+
+}
+
+ .main .registered  a:hover{
+
+    background-color:#256DB7;
+
+    color:#fff;
+
+}
+#changeImg{
+
+    margin:0 auto;
+
+}
+.code-refresh{
+
+    position: relative;
+
+    top:18px;
+
+    left:-93px;
+
+}
+.phone-code{
+
+    width:150px;
+
+    height:35px;
+
+    border:0.5px solid #aaa;
+
+    background-color: #f2f2f2;
+
+    position: relative;
+
+    font-weight: bold;
+}
+
+/* 验证码 */
