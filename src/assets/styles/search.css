@@ -1,0 +1,18 @@
+.btn-div .search-box{
+    margin-right: 40px;
+    float: right;
+}
+.btn-div .search-box select{
+    width: 90px;
+    height: 34px;
+    border-radius: 4px;
+    border-color: #2e6da4;
+    margin-right: 8px;
+}
+.btn-div .search-box input{
+    width: 120px;
+    height: 34px;
+    border-radius: 4px;
+    border: 1px solid #2e6da4;
+}
+/* 样式end */
