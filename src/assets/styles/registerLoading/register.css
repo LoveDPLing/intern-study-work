@@ -1,5 +1,5 @@
 body{
-    background:url(../images/img1.jpg);
+    background:url(../../images/registerLoading/img1.jpg);
 
     background-size:100%;
 }
@@ -288,11 +288,11 @@ input::-webkit-input-placeholder{
 
     line-height : 37px;
 
-    font-size : 15px;
-
-    color : #fff;
-
     border-radius:5%;
+
+    color:#fff;
+
+    font-size : 15px;
 
     position: relative;
 
@@ -305,6 +305,13 @@ input::-webkit-input-placeholder{
 
     box-shadow: 1px 2px 5px #1890FF,-1px -2px 5px#1890FF;
     
+}
+.main .last a{
+
+    color:#fff;
+
+    font-size : 15px;
+
 }
 
  .main .registered  a:hover{

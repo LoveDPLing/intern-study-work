@@ -205,7 +205,7 @@ a{
 
     color:rgb(146, 144, 144);
 
-    background:url(../images/账户.png) no-repeat 0% 50%;
+    background:url(../../images/registerLoading/账户.png) no-repeat 0% 50%;
 
     border:1px solid #aaa;
 
@@ -271,7 +271,7 @@ a{
 
     left: 60px;
 
-    background:url(../images/密码.png) no-repeat 0% 50%;
+    background:url(../../images/registerLoading/密码.png) no-repeat 0% 50%;
 
     color:rgb(146, 144, 144);
 
