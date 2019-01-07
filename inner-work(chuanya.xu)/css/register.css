@@ -301,6 +301,11 @@ input::-webkit-input-placeholder{
      bottom:-80px;
 
 }
+.main .last:hover{
+
+    box-shadow: 1px 2px 5px #1890FF,-1px -2px 5px#1890FF;
+    
+}
 
  .main .registered  a:hover{
 
