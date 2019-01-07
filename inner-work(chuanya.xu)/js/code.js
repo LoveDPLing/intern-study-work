@@ -31,7 +31,7 @@ $(document).ready(function ($) {
         //颜色若太深可能导致看不清
         ctx.fillRect(0, 0, width, height);
         /**绘制文字**/
-        var str = 'ABCEFGHJKLMNPQRSTWXY123456789';
+        var str = 'abcdefghijklmnopqrstuvwxyz123456789';
         var code = "";
         //生成四个验证码
         for (var i = 1; i <= 4; i++) {
