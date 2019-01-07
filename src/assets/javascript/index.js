@@ -13,4 +13,19 @@ jQuery(document).ready(function () {
     //     $(this).addClass("selected");
     //     $(this).siblings().removeClass("selected");
     // });
+    var i=0;     //收缩
+    $('.shrink').click(function(){
+        // $('.left').toggle({},$('.test').toggle()); 
+        $('.left').toggle('normal'); 
+        if (i==0){ 
+            $(".right").animate({marginLeft:"0px"});
+            $(this).find('i').addClass("fa-arrow-right");
+            i=1;
+        }
+        else{
+            $(this).find('i').removeClass("fa-arrow-right");   
+            $(".right").animate({marginLeft:"256px"});
+            i=0;
+        }
+    });
 });
