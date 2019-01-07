@@ -23,7 +23,7 @@ $(document).ready(function () {
     }
   });
 
-  var i = 1;
+  var i = 3;
   $("#left").click(function () {
     i--;
     if (i < 1) {
